@@ -6,20 +6,30 @@ import Uses from "../tools-components/ToolContainer";
 import LandingPage from "../utility components/LandingPage";
 import RootLayout from "./RootLayout";
 import Error from "../utility components/Error.jsx";
+import TempSingleArticle from "../article-components/single-article/TempSingleArticle.jsx";
+import ArticleRootLayout from "./ArticleRootLayout.jsx";
 
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <RootLayout />,
-      errorElement: <Error />,
-      children: [
-        { path: "", element: <LandingPage /> },
-        { path: "articles", element: <ArticleContainer /> },
-        { path: "projects", element: <ProjectContainer /> },
-        { path: "speaking", element: <Speaking /> },
-        { path: "uses", element: <Uses /> },
-      ],
-    },
-  ]);
+  {
+    path: "/",
+    element: <RootLayout />,
+    errorElement: <Error />,
+    children: [
+      { path: "", element: <LandingPage /> },
+      {
+        path: "articles",
+        element: <ArticleRootLayout />,
 
-  export default router;
+        children: [
+          { index: true, element: <ArticleContainer /> },
+          { path: ":id", element: <TempSingleArticle /> },
+        ],
+      },
+      { path: "projects", element: <ProjectContainer /> },
+      { path: "speaking", element: <Speaking /> },
+      { path: "uses", element: <Uses /> },
+    ],
+  },
+]);
+
+export default router;
