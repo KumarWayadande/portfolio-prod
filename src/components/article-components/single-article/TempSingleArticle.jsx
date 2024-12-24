@@ -1,5 +1,5 @@
 // This Component is being used for displaying demo article
-// This Component is being used for displaying demo arti
+// This Component is being used for displaying demo artic
 // import axios from "axios";
 // import { useLoaderData } from "react-router-dom";
 import ArticleBackButton from "./ArticleBackBtn";
