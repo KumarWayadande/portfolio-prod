@@ -1,5 +1,5 @@
 // This Component is being used for displaying demo article
-// This Component i
+// This Component is
 // import axios from "axios";
 // import { useLoaderData } from "react-router-dom";
 import ArticleBackButton from "./ArticleBackBtn";
