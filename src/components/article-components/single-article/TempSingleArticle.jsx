@@ -1,21 +1,22 @@
 // This Component is being used for displaying demo article
 // This Component is being used for displaying demo article
 // import axios from "axios";
-// import { useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import ArticleBackButton from "./ArticleBackBtn";
 import Heading from "./Heading";
 import Contents from "./Contents";
-import banner from "../../../assets/aero_function_banner-3.png";
+// import banner from "../../../assets/aero_function_banner-3.png";
 import Date from "./Date";
-import ExtLink from "./ExtLink";
-import CodeEditor from "./CodeEditor";
+// import ExtLink from "./ExtLink";
+// import CodeEditor from "./CodeEditor";
 import Image from "./Image";
+import ReactMarkdown from "react-markdown";
 
 export default function TempSingleArticle() {
-  // const result = useLoaderData();
-  // const { data } = result;
+  const result = useLoaderData();
+  console.log(result);
 
-  // if (!data.article) return <h1>Article not found</h1>;
+  // if (!data.data) return <h1>Article not found</h1>;
   return (
     <div className="single-article-container mx-auto mt-15 md:mt-20 flex flex-col md:flex-row">
       <div className="back-aero-container md:basis-1/6 flex-col md:flex-row items-center">
@@ -25,11 +26,10 @@ export default function TempSingleArticle() {
       </div>
       <div className="article-contents-container max-w-2xl basis-10/12">
         <Date />
-        <Heading extraClasses="mb-15">
-          Understanding Arrow Functions in JavaScript
-        </Heading>
+        <Heading extraClasses="mb-15">{result.data.articleHeading}</Heading>
         <Contents>
-          The{" "}
+          {result.data.articleDesc}
+          {/* The{" "}
           <ExtLink link="http://www.ecma-international.org/ecma-262/6.0/">
             2015 edition of the ECMAScript specification (ES6)
           </ExtLink>{" "}
@@ -40,10 +40,14 @@ export default function TempSingleArticle() {
           language. Arrow functions are a new way to write anonymous function
           expressions, and are similar to
           <ExtLink> lambda functions </ExtLink>in some other programming
-          languages, such as <ExtLink>Python.</ExtLink>
+          languages, such as <ExtLink>Python.</ExtLink> */}
         </Contents>
-        <Image src={banner} className="rounded-xl my-10" />
-        <Contents>
+        <Image
+          src={`http://localhost:1337${result.data.coverImg[0].url}`}
+          className="rounded-xl my-10"
+        />
+        <ReactMarkdown>{result.data.ArticleImageEditor}</ReactMarkdown>
+        {/* <Contents>
           Arrow functions differ from traditional functions in a number of ways,
           including the way their scope is determined and how their syntax is
           expressed. Because of this, arrow functions are particularly useful
@@ -207,19 +211,21 @@ sum();`}
           In the next section, you will explore more of the syntactical and
           practical differences between arrow functions and traditional
           functions.
-        </Contents>
+        </Contents> */}
       </div>
     </div>
   );
 }
 
-// export async function loader({ params }) {
-//   try {
-//     const articleId = params.id;
-//     return await axios.post("http://localhost:3000/articles/" + articleId, {
-//       articleId,
-//     });
-//   } catch (err) {
-//     throw new Error(err.message, { status: err.status });
-//   }
-// }
+export async function articleLoader({ params }) {
+  try {
+    const articleId = params.id;
+    const res = await fetch(
+      `http://localhost:1337/api/articles/${articleId}?populate=*`
+    );
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    throw new Error(err.message, { status: err.status });
+  }
+}

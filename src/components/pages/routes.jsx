@@ -1,12 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
-import ArticleContainer from "../article-components/ArticleContainer";
+import ArticleContainer, {
+  loader,
+} from "../article-components/ArticleContainer";
 import ProjectContainer from "../project-components/ProjectContainer";
 import Speaking from "../speaking-components/Speaking";
 import Uses from "../tools-components/ToolContainer";
 import LandingPage from "../utility components/LandingPage";
 import RootLayout from "./RootLayout";
 import Error from "../utility components/Error.jsx";
-import TempSingleArticle from "../article-components/single-article/TempSingleArticle.jsx";
+import TempSingleArticle, {
+  articleLoader,
+} from "../article-components/single-article/TempSingleArticle.jsx";
 import ArticleRootLayout from "./ArticleRootLayout.jsx";
 
 const router = createBrowserRouter([
@@ -21,8 +25,12 @@ const router = createBrowserRouter([
         element: <ArticleRootLayout />,
 
         children: [
-          { index: true, element: <ArticleContainer /> },
-          { path: ":id", element: <TempSingleArticle /> },
+          { index: true, element: <ArticleContainer />, loader: loader },
+          {
+            path: ":id",
+            element: <TempSingleArticle />,
+            loader: articleLoader,
+          },
         ],
       },
       { path: "projects", element: <ProjectContainer /> },
