@@ -8,6 +8,7 @@ import Uses from "../tools-components/ToolContainer";
 import LandingPage from "../utility components/LandingPage";
 import RootLayout from "./RootLayout";
 import Error from "../utility components/Error.jsx";
+import { limitedArticleLoader } from "../utility components/LandingPage";
 import TempSingleArticle, {
   articleLoader,
 } from "../article-components/single-article/TempSingleArticle.jsx";
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <Error />,
     children: [
-      { path: "", element: <LandingPage /> },
+      { path: "", element: <LandingPage />, loader: limitedArticleLoader },
+      { path: "about", element: <LandingPage />},
       {
         path: "articles",
         element: <ArticleRootLayout />,

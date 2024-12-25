@@ -1,8 +1,12 @@
 
+import { useLoaderData } from "react-router-dom";
 import MediaIcon from "./Mediacon";
 import OverviewArticle from "./OverviewArticle";
 
 const LandingPage = () => {
+  const data = useLoaderData();
+  console.log(data);
+  
   return (
     <div className="main-page-container">
       <div className="landing-page flex flex-col space-y-4 max-w-2xl">
@@ -15,7 +19,7 @@ const LandingPage = () => {
         </div>
 
         <div className="heading text-4xl md:text-5xl font-bold dark:text-white">
-          Software designer, founder, and amateur astronaut.
+          Web Devloper, and amateur crime investigative.
         </div>
 
         <div className="">
@@ -78,10 +82,13 @@ const LandingPage = () => {
         <div className="left flex flex-col w-[100%]">
           
           
+        {data.data.map((article, index) => {
+          return <OverviewArticle {...article} key={index} />;
+        })}
 
+          {/* <OverviewArticle />
           <OverviewArticle />
-          <OverviewArticle />
-          <OverviewArticle />
+          <OverviewArticle /> */}
           
         </div>
 
@@ -218,3 +225,11 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
+
+export async function limitedArticleLoader() {
+  const res = await fetch("http://localhost:1337/api/articles?pagination[limit]=3&sort=date:desc");
+  const data = await res.json();
+
+  return data;
+}

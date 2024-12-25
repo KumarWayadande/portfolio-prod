@@ -46,7 +46,7 @@ const ArticleContainer = () => {
 export default ArticleContainer;
 
 export async function loader() {
-  const res = await fetch("http://localhost:1337/api/articles");
+  const res = await fetch("http://localhost:1337/api/articles?sort=date:desc");
   const data = await res.json();
 
   return data;

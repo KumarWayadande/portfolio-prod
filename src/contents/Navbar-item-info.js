@@ -1,7 +1,7 @@
 export const NAVBAR_ITEM_INFO = [
   {
     id: "NAVBAR_ITEM_01",
-    navbarHeading: "About",
+    navbarHeading: "Home",
     path: "",
   },
   {
@@ -16,12 +16,12 @@ export const NAVBAR_ITEM_INFO = [
   },
   {
     id: "NAVBAR_ITEM_04",
-    navbarHeading: "Speaking",
-    path: "speaking",
+    navbarHeading: "Uses",
+    path: "uses",
   },
   {
     id: "NAVBAR_ITEM_05",
-    navbarHeading: "Uses",
-    path: "uses",
+    navbarHeading: "About",
+    path: "about",
   },
 ];
