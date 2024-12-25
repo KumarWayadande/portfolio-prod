@@ -46,7 +46,11 @@ export default function TempSingleArticle() {
           src={`http://localhost:1337${result.data.coverImg[0].url}`}
           className="rounded-xl my-10"
         />
-        <ReactMarkdown>{result.data.ArticleImageEditor}</ReactMarkdown>
+        <Contents>
+          <ReactMarkdown>
+            {result.data.ArticleImageEditor}
+          </ReactMarkdown>
+        </Contents>
         {/* <Contents>
           Arrow functions differ from traditional functions in a number of ways,
           including the way their scope is determined and how their syntax is
