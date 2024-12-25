@@ -29,3 +29,8 @@ const ArticleContainer = () => {
 };
 
 export default ArticleContainer;
+
+
+export async function loader(){
+  
+}
