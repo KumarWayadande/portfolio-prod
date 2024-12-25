@@ -1,10 +1,11 @@
 import { TfiArrowLeft } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 
-export default function ArticleBackButton() {
+export default function ArticleBackButton(prop) {
   return (
     <Link
       to={-1}
+      preventScrollReset={true}
       // onClick={(e) => e.preventDefault()}
       className="border dark:bg-[#252529] dark:border-gray-700 dark:hover:border-gray-600 border-gray-200 p-3 rounded-full shadow-md mb-10"
     >
