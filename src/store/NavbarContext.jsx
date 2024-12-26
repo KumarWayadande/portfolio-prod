@@ -2,7 +2,7 @@
 
 
 // This file contains all the functions and states used for navbar and its buttons
-// This 
+// This f 
 
 import { createContext, useState } from "react";
 import LandingPage from "../components/utility components/LandingPage";
