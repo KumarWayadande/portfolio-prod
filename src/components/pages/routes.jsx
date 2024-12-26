@@ -13,6 +13,7 @@ import TempSingleArticle, {
   articleLoader,
 } from "../article-components/single-article/TempSingleArticle.jsx";
 import ArticleRootLayout from "./ArticleRootLayout.jsx";
+import AboutContainer from "../about-component/About.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       { path: "", element: <LandingPage />, loader: limitedArticleLoader },
-      { path: "about", element: <LandingPage />},
+      { path: "about", element: <AboutContainer />},
       {
         path: "articles",
         element: <ArticleRootLayout />,

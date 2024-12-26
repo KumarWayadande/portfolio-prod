@@ -1,5 +1,9 @@
 /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
 
+
+// This file contains all the functions and states used for navbar and its buttons
+ 
+
 import { createContext, useState } from "react";
 import LandingPage from "../components/utility components/LandingPage";
 import { IoSunny } from "react-icons/io5";
@@ -81,7 +85,7 @@ export function NavbarContextProvider({ children }) {
     } else {
       btn = <LuMoonStar fontSize="20px" color="#1fbcaa" />;
       btnClass +=
-        "dark:bg-[#252529] dark:hover:border-gray-500 dark:border-gray-600 dark:border-[1px] dark:hover:text-stone-400 dark:shadow-none";
+        " dark:bg-[#252529] dark:hover:border-gray-500 dark:border-gray-600 dark:border-[1px] dark:hover:text-stone-400 dark:shadow-none";
     }
 
     return {

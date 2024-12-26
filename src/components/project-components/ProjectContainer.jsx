@@ -12,20 +12,17 @@ const ProjectContainer = () => {
           heading="Things I’ve made trying to put my dent in the universe.
 "
         />
-        <SubHeading
-          subHeading="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.
-
-"
-        />
+        <SubHeading>
+          I’ve worked on tons of little projects over the years but these are
+          the ones that I’m most proud of. Many of them are open-source, so if
+          you see something that piques your interest, check out the code and
+          contribute if you have ideas for how it can be improved.
+        </SubHeading>
       </HeadingContainer>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:-translate-x-5">
         {projectInfo.map((item, index) => {
-          return (<Project
-            key={index}
-            buttonText="github.com"
-            {...item}
-          />)
+          return <Project key={index} buttonText="github.com" {...item} />;
         })}
       </div>
     </div>
