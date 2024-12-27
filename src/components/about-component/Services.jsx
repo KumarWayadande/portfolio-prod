@@ -1,6 +1,6 @@
 import html from "../../assets/html.jpg";
 import css from "../../assets/css.jpg";
-mport js from "../../assets/js.jpg";
+import js from "../../assets/js.jpg";
 
 import express from "../../assets/express.png";
 import mongodb from "../../assets/mongodb.png";
