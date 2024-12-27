@@ -170,7 +170,7 @@ export default function Logos() {
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/5731a5a7-689f-49ae-abf1-6e6dc00c2043?apiKey=7e8b177c7c374d8abaf3aebf27f1c17d&"
-        /* lassName="aspect-[1.15] object-contain object-center w-[122px] overflow-hidden self-center max-w-full my-auto" */
+        /* assName="aspect-[1.15] object-contain object-center w-[122px] overflow-hidden self-center max-w-full my-auto" */
         className="max-w-none"
         alt="Image 8"
       />
