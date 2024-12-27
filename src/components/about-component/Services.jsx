@@ -6,7 +6,7 @@ import express from "../../assets/express.png";
 import mongodb from "../../assets/mongodb.png";
 import react from "../../assets/react.png";
 import node from "../../assets/node.png";
-// 
+i
 
 export default function Services() {
   return (
@@ -57,22 +57,22 @@ export default function Services() {
         </blockquote>
         <figcaption className="flex items-center justify-center ">
           <img
-            className="rounded-full w-9 h-9"
+            className="rounded-full w-9 h-9 mx-1"
             src={mongodb}
             alt="profile picture"
           />
           <img
-            className="rounded-full w-9 h-9"
+            className="rounded-full w-9 h-9 mx-1"
             src={react}
             alt="profile picture"
           />
           <img
-            className="rounded-full w-9 h-9"
+            className="rounded-full w-9 h-9 mx-1"
             src={express}
             alt="profile picture"
           />
           <img
-            className="rounded-full w-9 h-9"
+            className="rounded-full w-9 h-9 mx-1"
             src={node}
             alt="profile picture"
           />
@@ -91,16 +91,15 @@ export default function Services() {
         </blockquote>
         <figcaption className="flex items-center justify-center ">
           <img
-            className="rounded-full w-9 h-9"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+            className="rounded-full w-9 h-9 mx-1"
+            src={node}
             alt="profile picture"
           />
-          <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-            <div>Jese Leos</div>
-            <div className="text-sm text-gray-500 dark:text-gray-400">
-              Software Engineer at Facebook
-            </div>
-          </div>
+          <img
+            className="rounded-full w-9 h-9 mx-1"
+            src={}
+            alt="profile picture"
+          />
         </figcaption>
       </figure>
       <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-[#252529] dark:border-gray-700">
