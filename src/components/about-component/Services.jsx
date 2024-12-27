@@ -5,7 +5,8 @@ import js from "../../assets/js.jpg";
 import express from "../../assets/express.png";
 import mongodb from "../../assets/mongodb.png";
 import react from "../../assets/react.png";
-// import 
+import node from "../../assets/node.png";
+// impo
 
 export default function Services() {
   return (
