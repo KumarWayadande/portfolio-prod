@@ -5,6 +5,7 @@ import SubHeading from "../utility components/SubHeading";
 import List from "./List";
 import { Link } from "react-router-dom";
 import Logos from "./Logos";
+import Services from "./Services";
 const AboutContainer = () => {
   return (
     <div>
@@ -81,7 +82,8 @@ const AboutContainer = () => {
         {/* <hr className="w-8 h-8 mx-auto my-8 bg-gray-200 border-0 rounded md:my-12 dark:bg-gray-700" /> */}
 
         <div className="second-section">
-          <h1 className="mb-4 text-2xl font-extrabold text-gray-600 dark:text-white md:text-3xl lg:text-3xl">
+          {/* <h1 className="my-14 text-4xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"> */}
+          <h1 className="my-14 text-4xl text-center font-extrabold text-gray-600 dark:text-white md:text-4xl lg:text-5xl">
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
               {/* More of me? */}
             </span>{" "}
@@ -89,7 +91,7 @@ const AboutContainer = () => {
             {/* Scalable AI. */}
           </h1>
 
-          <ol className="ml-4">
+          <ol className="mx-[auto] max-w-2xl text-justify">
             <List>
               <b>Expanding Technical Expertise:</b> Currently learning advanced
               concepts in web development, focusing on frameworks like React,
@@ -114,14 +116,33 @@ const AboutContainer = () => {
               integrates task management and habit tracking.
             </List>
             <List>
-              <b>Research Project:</b> Diving deep into the history of place names and cultural
-              evolution, with a focus on Mumbai&apos;s unique heritage.
+              <b>Research Project:</b> Diving deep into the history of place
+              names and cultural evolution, with a focus on Mumbai&apos;s unique
+              heritage.
             </List>
           </ol>
         </div>
 
-        <div className="third-section mt-10">
+        <div className="third-section mt-10 text-center">
+          <h1 className="my-14 text-4xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
+            I know all these{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+              {" "}
+              Stuff
+            </span>
+          </h1>
           <Logos />
+        </div>
+
+        <div className="fourth-section mt-10 text-center">
+          <h1 className="my-14 text-4xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
+            Yes, you can ask me for following{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+              {" "}
+              tasks...
+            </span>{" "}
+          </h1>
+          <Services />
         </div>
       </div>
     </div>
