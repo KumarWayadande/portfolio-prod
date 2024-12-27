@@ -1,5 +1,5 @@
 // import html from "../../assets/html.jpg";
-import css from "../../assets/css.jpg";
+// import css from "../../assets/css.jpg";
 // import js from "../../assets/js.jpg";
 
 import express from "../../assets/express.png";
