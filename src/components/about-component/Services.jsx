@@ -3,8 +3,8 @@ import css from "../../assets/css.jpg";
 import js from "../../assets/js.jpg";
 
 import express from "../../assets/express.png";
-// import mongodb from "../../assets/mongodb.png";
-import react from "../../assets/react.png";
+import mongodb from "../../assets/mongodb.png";
+// import react from "../../assets/react.png";
 import node from "../../assets/node.png";
 
 export default function Services() {
