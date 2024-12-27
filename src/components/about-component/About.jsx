@@ -42,9 +42,14 @@ const AboutContainer = () => {
               Welcome to my spot on the web for writing, projects, tutorials,
               art, and anything else I want to put out there. On the site,
               you&apos;ll find my notes and all the technical{" "}
-              <ExtLink><Link to={"/articles"}>articles</Link></ExtLink> I&apos;ve written over the years.
-              Check out the <ExtLink><Link to={"/projects"}>projects</Link></ExtLink> page to see a highlight
-              of my open-source work.
+              <ExtLink>
+                <Link to={"/articles"}>articles</Link>
+              </ExtLink>{" "}
+              I&apos;ve written over the years. Check out the{" "}
+              <ExtLink>
+                <Link to={"/projects"}>projects</Link>
+              </ExtLink>{" "}
+              page to see a highlight of my open-source work.
               <br />
             </SubHeading>
 
@@ -109,15 +114,14 @@ const AboutContainer = () => {
               integrates task management and habit tracking.
             </List>
             <List>
-              <b>Research Project:</b>
-              Diving deep into the history of place names and cultural
+              <b>Research Project:</b> Diving deep into the history of place names and cultural
               evolution, with a focus on Mumbai&apos;s unique heritage.
             </List>
           </ol>
         </div>
 
         <div className="third-section mt-10">
-            <Logos />
+          <Logos />
         </div>
       </div>
     </div>
