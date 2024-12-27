@@ -1,12 +1,16 @@
 import html from "../../assets/html.jpg";
 import css from "../../assets/css.jpg";
-import js from "../../assets/js.jpg";
+mport js from "../../assets/js.jpg";
 
 import express from "../../assets/express.png";
 import mongodb from "../../assets/mongodb.png";
 import react from "../../assets/react.png";
 import node from "../../assets/node.png";
-imp
+
+import wanderer1 from "../../assets/wanderer-1.png";
+import wanderer2 from "../../assets/wanderer-2.png";
+
+import open_source from "../../assets/open-source.png";
 
 export default function Services() {
   return (
@@ -97,7 +101,7 @@ export default function Services() {
           />
           <img
             className="rounded-full w-9 h-9 mx-1"
-            src={}
+            src={open_source}
             alt="profile picture"
           />
         </figcaption>
@@ -116,16 +120,16 @@ export default function Services() {
         </blockquote>
         <figcaption className="flex items-center justify-center ">
           <img
-            className="rounded-full w-9 h-9"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+            className="rounded-full w-9 h-9 mx-1"
+            src={wanderer1}
             alt="profile picture"
           />
-          <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-            <div>Joseph McFall</div>
-            <div className="text-sm text-gray-500 dark:text-gray-400">
-              CTO at Google
-            </div>
-          </div>
+          <img
+            className="rounded-full w-9 h-9 mx-1"
+            src={wanderer2}
+            alt="profile picture"
+          />
+          
         </figcaption>
       </figure>
     </div>
