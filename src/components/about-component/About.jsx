@@ -6,6 +6,7 @@ import List from "./List";
 import { Link } from "react-router-dom";
 import Logos from "./Logos";
 import Services from "./Services";
+import Newsletter from "./Newsletter";
 const AboutContainer = () => {
   return (
     <div>
@@ -83,7 +84,7 @@ const AboutContainer = () => {
 
         <div className="second-section">
           {/* <h1 className="my-14 text-4xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"> */}
-          <h1 className="my-14 text-4xl text-center font-extrabold text-gray-600 dark:text-white md:text-4xl lg:text-5xl">
+          <h1 className="my-14 text-4xl text-center font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
               {/* More of me? */}
             </span>{" "}
@@ -143,6 +144,10 @@ const AboutContainer = () => {
             </span>{" "}
           </h1>
           <Services />
+        </div>
+
+        <div className="newsletter">
+          <Newsletter />
         </div>
       </div>
     </div>

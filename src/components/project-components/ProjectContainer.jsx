@@ -9,7 +9,7 @@ const ProjectContainer = () => {
     <div>
       <HeadingContainer>
         <Heading
-          heading="Things I’ve made trying to put my dent in the universe.
+          heading="Things I’ve made trying to put my dent in the IT universe.
 "
         />
         <SubHeading>
@@ -20,7 +20,7 @@ const ProjectContainer = () => {
         </SubHeading>
       </HeadingContainer>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:-translate-x-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:-translate-x-5 gap-y-4">
         {projectInfo.map((item, index) => {
           return <Project key={index} buttonText="github.com" {...item} />;
         })}

@@ -25,8 +25,8 @@ const LandingPage = () => {
         <div className="">
           <p className="dark:text-gray-500">
             I’m Kumar, a web developer and cloud computing ethusiast based in
-            Pune City. I’m intrigued to learn AWS cloud services with corresponding 
-            certifications and develop better Solutions.
+            Pune City. I’m intrigued to learn AWS cloud services with
+            corresponding certifications and develop better Solutions.
             {/* I’m Kumar, a web developer and amatuer crime investigative based in Pune
             City. I’m strongly interested in psychology - The science of
             human thought, emotion, and learning, including interpersonal
@@ -110,27 +110,27 @@ const LandingPage = () => {
         </div>
 
         <div className="right flex flex-col w-[100%] my-5 lg:pl-32 px-4 py-0">
-          <div className="contact-card p-5 border dark:border-gray-700 rounded-lg">
-            <span className="flex gap-2 items-center text-stone-600">
+          <div className="contact-card p-5 border dark:border-[#27272c] rounded-lg">
+            <span className="flex gap-2 items-center justify-start text-stone-600">
               <i className="fa-solid fa-briefcase"></i>
               <h3 className="font-semibold text-sm text-stone-900 dark:text-gray-50">
                 Stay up to date
               </h3>
             </span>
-            <p className="text-stone-400 dark:text-stone-500 my-3 text-sm">
-              Get notified when i publish something new, and unsubscribe at
+            <p className="text-stone-600 dark:text-stone-300 my-3 text-sm">
+              Get notified when I publish something new, and unsubscribe at
               anytime.
             </p>
             <div className="contact-card-fields flex gap-4 my-2">
               <input
-                className="dark:bg-[#161618] dark:focus:outline-none focus:border-none dark:text-stone-50 dark:border-gray-700 p-2 shadow-sm border w-[84%] rounded-md"
+                className="focus:ring-4 focus:ring-teal-500/10 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 focus:border-teal-500 placeholder:text-[#52525c] dark:bg-[#1d1d21] dark:focus:outline-none focus:border-none text-sm dark:text-stone-50 dark:border-[#27272c] px-2 shadow-sm border dark:border-2 w-[80%] rounded-md focus:outline-none"
                 type="text"
                 name=""
                 id=""
                 placeholder="Email address"
               />
               <a href="https://kumarwayadande.substack.com/embed">
-                <button className="bg-black text-sm font-bold  text-white py-3 dark:hover:bg-[#35353a] dark:bg-[#3f3f46] dark:text-stone-50 px-2 rounded-lg">
+                <button className="bg-black text-sm font-bold  text-white py-3 dark:hover:bg-[#35353a] dark:bg-[#3f3f46] dark:text-stone-50 px-3 rounded-lg">
                   Join
                 </button>
               </a>
@@ -146,11 +146,11 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="work-exp p-5 border dark:border-gray-700 rounded-lg my-10">
-            <span className="flex gap-2 items-center text-stone-600">
+          <div className="work-exp p-5 border dark:border-[#27272c] rounded-lg my-10">
+            <span className="flex gap-2 items-center justify-start text-stone-600 mb-5">
               <i className="fa-solid fa-briefcase"></i>
-              <h3 className="font-semibold text-stone-500 dark:text-stone-100">
-                Work
+              <h3 className="font-semibold text-sm text-stone-900 dark:text-gray-50">
+                Intern / Work
               </h3>
             </span>
             <div className="companies flex flex-col my-3">
@@ -158,23 +158,26 @@ const LandingPage = () => {
                 <div className="company-logo rounded-3xl flex flex-row items-center gap-3">
                   <span className="rounded-3xl border-gray-200 border dark:border-none">
                     <img
-                      src="\src\assets\company-logo1.png"
-                      className="w-14 rounded-3xl border-white border-8 dark:border-[#1e1e20]"
+                      // src="\src\assets\company-logo1.png"
+                      src="\src\assets\linkcode.jpg"
+                      className="w-12 rounded-3xl border-white border-8 dark:border-[#1e1e20]"
                       alt=""
                     />
                   </span>
 
                   <div className="company-info">
                     <h5 className="font-semibold text-sm dark:text-stone-100">
-                      Planetaria
+                      Linkcode Technologies
                     </h5>
-                    <p className="text-stone-400 text-sm">CEO</p>
+                    <p className="text-stone-400 text-sm">
+                      Front End Developer
+                    </p>
                   </div>
                 </div>
 
                 <div className="year">
                   <span className="timeline text-stone-400 text-xs">
-                    2019-present
+                    2022-23
                   </span>
                 </div>
               </div>
@@ -183,78 +186,54 @@ const LandingPage = () => {
                 <div className="company-logo rounded-3xl flex flex-row items-center gap-3">
                   <span className="rounded-3xl border-gray-200 border dark:border-none">
                     <img
-                      src="\src\assets\company-logo2.png"
-                      className="w-14 rounded-3xl border-white border-8 dark:border-[#1e1e20]"
+                      src="\src\assets\innovatus.png"
+                      className="w-12 rounded-3xl border-white border-8 dark:border-[#1e1e20]"
                       alt=""
                     />
                   </span>
 
                   <div className="company-info">
                     <h5 className="font-semibold text-sm dark:text-stone-100">
-                      Planetaria
+                      Innovatus Technologies
                     </h5>
-                    <p className="text-stone-400 text-sm">CEO</p>
+                    <p className="text-stone-400 text-sm">Backend Developer</p>
                   </div>
                 </div>
 
                 <div className="year">
-                  <span className="timeline text-stone-400 text-xs">
-                    2019-present
-                  </span>
+                  <span className="timeline text-stone-400 text-xs">2023</span>
                 </div>
               </div>
               <div className="work-holder flex my-1 justify-between items-baseline">
                 <div className="company-logo rounded-3xl flex flex-row items-center gap-3">
                   <span className="rounded-3xl border-gray-200 border dark:border-none">
                     <img
-                      src="\src\assets\company-logo3.png"
-                      className="w-14 rounded-3xl border-white border-8 dark:border-[#1e1e20]"
+                      src="\src\assets\campus-infotech.png"
+                      className="w-12 rounded-3xl border-white border-8 dark:border-[#1e1e20]"
                       alt=""
                     />
                   </span>
 
                   <div className="company-info">
                     <h5 className="font-semibold text-sm dark:text-stone-100">
-                      Planetaria
+                      Campus Infotech
                     </h5>
-                    <p className="text-stone-400 text-sm">CEO</p>
+                    <p className="text-stone-400 text-sm">
+                      AWS Cloud Practitioner
+                    </p>
                   </div>
                 </div>
 
                 <div className="year">
                   <span className="timeline text-stone-400 text-xs">
-                    2019-present
-                  </span>
-                </div>
-              </div>
-              <div className="work-holder flex my-1 justify-between items-baseline">
-                <div className="company-logo rounded-3xl flex flex-row items-center gap-3">
-                  <span className="rounded-3xl border-gray-200 border dark:border-none">
-                    <img
-                      src="\src\assets\company-logo4.png"
-                      className="w-14 rounded-3xl border-white border-8 dark:border-[#1e1e20]"
-                      alt=""
-                    />
-                  </span>
-
-                  <div className="company-info">
-                    <h5 className="font-semibold text-sm dark:text-stone-100">
-                      Planetaria
-                    </h5>
-                    <p className="text-stone-400 text-sm">CEO</p>
-                  </div>
-                </div>
-
-                <div className="year">
-                  <span className="timeline text-stone-400 text-xs">
-                    2019-present
+                    2024-25 present
                   </span>
                 </div>
               </div>
             </div>
             <div className="">
               <a href={resume} download="Copy of Resume.pdf">
-                <button className="text-sm dark:hover:bg-[#3F3F46] dark:bg-[#303035] dark:border-none dark:text-stone-300 px-4 py-2 w-[100%] border rounded-lg bg-gray-100 font-semibold">
+                <button className="text-sm dark:hover:bg-[#1f1f23] hover:bg-gray-200 dark:bg-[#202022] dark:border-none dark:text-stone-300 px-4 py-2 w-[100%] rounded-lg bg-gray-100 font-semibold">
                   Download CV
                 </button>
               </a>

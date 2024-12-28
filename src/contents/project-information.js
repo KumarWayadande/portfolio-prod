@@ -1,54 +1,70 @@
-import projectLogo from "../assets/company-logo1.png";
+import maariyan from "../assets/maariyan-logo.png";
+import gatsbyLogo from "../assets/gatsby-logo.png";
+import airbnb from "../assets/airbnb.jpg";
+import orderkaro from "../assets/final_logo_order_karo6.png";
+import timeCountDown from "../assets/time-count-down-logo.png";
+import placePicker from "../assets/place-picker.png";
+import projectLogo from "../assets/project-logo.png";
+
+const logos = [
+  maariyan,
+  gatsbyLogo,
+  airbnb,
+  orderkaro,
+  timeCountDown,
+  placePicker,
+  projectLogo,
+];
 
 const projectInfo = [
   {
-    projectHeader: "Mariyan Restaurant",
+    projectHeader: "Mariyan Restaurant (Website)",
     projectDescription:
-      "Elegant ambiance, gourmet cuisine, online reservations, special events, exceptional service.",
+      "Static website designed for specific region in the Pune for Maariyan restaurant.",
     projectLink: "https://github.com/KumarWayadande/mr3",
-    projectLogo: projectLogo,
+    projectLogo: logos[0],
   },
   {
-    projectHeader: "Toggl",
+    projectHeader: "Blog Platform - Gatsby",
     projectDescription:
-      "Time tracking applications to track our daily activity and get insights about them.",
-    projectLink: "https://github.com/KumarWayadande/kw",
-    projectLogo: projectLogo,
+      "Blog platform built using Gatsby framework with ReactJS.",
+    projectLink: "https://github.com/KumarWayadande/code_blog_gatsby",
+    projectLogo: logos[1],
   },
   {
-    projectHeader: "Airbnb clone",
+    projectHeader: "Airbnb clone (Devkraft Hackathon)",
     projectDescription:
-      "Unique stays worldwide, local hosts, affordable rates, easy booking, authentic experiences.",
+      "Airbnb clone made using Prisma, NextJS. It is hosted on Vercel.",
     projectLink: "https://github.com/KumarWayadande/devcraft-hackathon",
-    projectLogo: projectLogo,
+    projectLogo: logos[2],
   },
   {
     projectHeader: "OrderKaro",
     projectDescription:
-      "Convenient online shopping, fresh groceries, quick delivery, easy payment, reliable service.",
+      "Grocery Ordering System built using MERN stack. Dynamic location and cart repos supported.",
     projectLink: "https://github.com/KumarWayadande/orderkaro",
-    projectLogo: projectLogo,
+    projectLogo: logos[3],
   },
   {
-    projectHeader: "Tindog",
+    projectHeader: "Time Countdown Game",
     projectDescription:
-      "A digital world where dog owners can enjoy shopping and various plans for their dogs.",
-    projectLink: "https://github.com/KumarWayadande/com",
-    projectLogo: projectLogo,
+      "You are given time card which has to be stopped before it expires. The perfect you play, more you score.",
+    projectLink: "https://github.com/KumarWayadande/time-countdown-game",
+    projectLogo: logos[4],
   },
   {
-    projectHeader: "Old portfolio",
+    projectHeader: "Place Picker",
     projectDescription:
-      "Showcasing skills, projects, experience, contact information, professional online presence.",
-    projectLink: "https://github.com/KumarWayadande/kw.in",
-    projectLogo: projectLogo,
+      "Place picker is used for fun. It locates nearby view points based on your location.",
+    projectLink: "https://github.com/KumarWayadande/place-picker",
+    projectLogo: logos[5],
   },
   {
-    projectHeader: "Old portfolio",
+    projectHeader: "Project Management Platform",
     projectDescription:
-      "Showcasing skills, projects, experience, contact information, professional online presence.",
-    projectLink: "https://github.com/KumarWayadande/kw.in",
-    projectLogo: projectLogo,
+      "Built using ReactJS that allows users to manage their projects, list down pending task and more.",
+    projectLink: "https://github.com/KumarWayadande/project-management-app",
+    projectLogo: logos[6],
   },
 ];
 

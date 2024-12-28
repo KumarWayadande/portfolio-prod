@@ -129,7 +129,6 @@ export default function Services() {
             src={wanderer2}
             alt="profile picture"
           />
-          
         </figcaption>
       </figure>
     </div>

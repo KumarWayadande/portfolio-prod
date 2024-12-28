@@ -8,7 +8,15 @@ const Tool = (prop) => {
     <ToolsContainer>
       <ToolDate toolDate={prop.toolDate} />
       <ToolInformationContainer>
-        <ToolInformation toolName={prop.toolName} toolDescription={prop.toolDescription} />
+        {prop.tools.map((item, index) => {
+          return (
+            <ToolInformation
+              key={index}
+              toolName={item.toolName}
+              toolDescription={item.toolDescription}
+            />
+          );
+        })}
       </ToolInformationContainer>
     </ToolsContainer>
   );

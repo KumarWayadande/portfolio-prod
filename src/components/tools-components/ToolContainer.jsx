@@ -17,15 +17,10 @@ const Uses = () => {
         </SubHeading>
       </HeadingContainer>
 
-      <div className="tool-container flex flex-col border-l-[1px] border-b-gray-50 md:w-[80%] sm:pl-5 dark:border-gray-700">
+      <div className="tool-container flex flex-col md:border-l-[1px] w-[100%] border-b-gray-50 md:w-[80%] md:pl-5 dark:border-gray-700">
         {TOOLS_INFO.map((item) => {
           return (
-            <Tool
-              key={item.id}
-              toolDate="Productivity"
-              toolName={item.toolName}
-              toolDescription={item.toolDescription}
-            />
+            <Tool key={item.id} toolDate={item.toolDate} tools={item.tools} />
           );
         })}
       </div>
