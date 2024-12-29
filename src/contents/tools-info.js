@@ -65,7 +65,7 @@ const TOOLS_INFO = [
       },
       {
         id: "TOOL_ID:09",
-        toolName: "Gitbub CLI",
+        toolName: "Github CLI",
         toolDescription:
           "GitHub CLI: Command-line tool for GitHub, streamlining repository management, pull requests, issues, and workflows directly from the terminal.",
       },

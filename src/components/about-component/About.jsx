@@ -29,14 +29,14 @@ const AboutContainer = () => {
           {/* Scalable AI. */}
         </h1>
       </HeadingContainer>
-      <div className="firsr-section text-justify">
+      <div className="firsr-section text-justify my-5">
         <div className="first-section-part1 flex flex-col lg:flex-row items-center">
           <div className="first-section-part1-left pr-6">
             <SubHeading>
               Hey, I&apos;m Kumar! I have been pursuing B.E in Computer
               Engineering from D.Y Patil Institue of Technology, and I&apos;ve
-              been making websites since 2022. I also have a cricket kit,
-              kashmir willow bat and no friends to play with. I like working
+              been making websites since 2021. I also have a cricket kit,
+              kashmir willow bat and no friends to play with🙃. I like working
               out, reading and waiting for post dinner walk.
             </SubHeading>
 
@@ -82,7 +82,7 @@ const AboutContainer = () => {
 
         {/* <hr className="w-8 h-8 mx-auto my-8 bg-gray-200 border-0 rounded md:my-12 dark:bg-gray-700" /> */}
 
-        <div className="second-section">
+        <div className="second-section mb-5">
           {/* <h1 className="my-14 text-4xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"> */}
           <h1 className="my-14 text-4xl text-center font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
@@ -124,7 +124,7 @@ const AboutContainer = () => {
           </ol>
         </div>
 
-        <div className="third-section mt-10 text-center">
+        <div className="third-section my-20 text-center ">
           <h1 className="my-14 text-4xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
             I know all these{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
@@ -148,6 +148,7 @@ const AboutContainer = () => {
 
         <div className="newsletter">
           <Newsletter />
+         
         </div>
       </div>
     </div>

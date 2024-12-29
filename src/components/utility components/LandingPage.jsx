@@ -12,21 +12,24 @@ const LandingPage = () => {
       <div className="landing-page flex flex-col space-y-4 max-w-2xl">
         <div className="profile-container">
           <img
-            src="\src\assets\profile.jpg"
+            src="\src\assets\profile_5.png"
             className="w-16 rounded-full border border-gray-200 shadow-sm"
             alt=""
           />
         </div>
 
         <div className="heading text-4xl md:text-5xl font-bold dark:text-white">
-          Web Developer, and amateur cloud computing esthusiast.
+          Full-Stack Developer and Cloud Computing Ethusiast.
+          {/* <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+          {" "}cloud computing esthusiast.
+          </span> */}
         </div>
 
         <div className="">
           <p className="dark:text-gray-500">
             I’m Kumar, a web developer and cloud computing ethusiast based in
             Pune City. I’m intrigued to learn AWS cloud services with
-            corresponding certifications and develop better Solutions.
+            corresponding certifications and develop better Solutions. I love wandering and exploring historic elements of mumbai.
             {/* I’m Kumar, a web developer and amatuer crime investigative based in Pune
             City. I’m strongly interested in psychology - The science of
             human thought, emotion, and learning, including interpersonal
@@ -63,21 +66,21 @@ const LandingPage = () => {
         <div className="image-holder rotate-2 w-[10%] md:w-[5%] mx-2 md:mx-5  overflow-hidden">
           <img
             // src="./assets/l-page1.png"
-            src="\src\assets\l-page1.png"
+            src="\src\assets\landing-cloud-img.png"
             className="h-[80%] w-[120%] object-cover rounded-3xl"
             alt=""
           />
         </div>
         <div className="image-holder -rotate-2 w-[10%] md:w-[5%] mx-2 md:mx-5  overflow-hidden">
           <img
-            src="\src\assets\l-page2.png"
+            src="\src\assets\landing-web-img.png"
             className="h-[80%] w-[120%] object-cover rounded-3xl"
             alt=""
           />
         </div>
         <div className="image-holder rotate-2 w-[10%] md:w-[5%] mx-2 md:mx-5  overflow-hidden">
           <img
-            src="\src\assets\l-page3.png"
+            src="\src\assets\landing-byculla-img.jpg"
             className="h-[80%] w-[120%] object-cover rounded-3xl"
             alt=""
           />
@@ -91,7 +94,7 @@ const LandingPage = () => {
         </div>
         <div className="image-holder rotate-2 w-[10%] md:w-[5%] mx-2 md:mx-5  overflow-hidden">
           <img
-            src="\src\assets\l-page5.png"
+            src="\src\assets\landing-web1-img.webp"
             className="h-[80%] w-[120%] object-cover rounded-3xl"
             alt=""
           />
