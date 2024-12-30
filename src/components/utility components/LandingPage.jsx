@@ -1,7 +1,27 @@
 import resume from "../../assets/KUMAR WAYADANDE RESUME_I.pdf";
 import MediaIcon from "./Mediacon";
 import OverviewArticle from "./OverviewArticle";
-import profilePhoto from "../../assets/profile_5.png"
+import profilePhoto from "../../assets/profile_5.png";
+
+import landingByculla from "../../assets/landing-byculla-img.jpg";
+import landingCloud from "../../assets/landing-cloud-img.png";
+import landingWeb from "../../assets/landing-web-img.png";
+import landingWeb1 from "../../assets/landing-web1-img.webp";
+import landingWeb2 from "../../assets/l-page4.png";
+
+import linkcode from "../../assets/linkcode.jpg";
+import innovatus from "../../assets/innovatus.png";
+import campus from "../../assets/campus-infotech.png";
+
+const companyImages = [linkcode, innovatus, campus];
+const images = [
+  landingCloud,
+  landingWeb,
+  landingByculla,
+  landingWeb1,
+  landingWeb2,
+];
+
 const limitedArticles = [
   {
     id: "ARTICLE_01",
@@ -90,35 +110,40 @@ const LandingPage = () => {
         <div className="image-holder rotate-2 w-[10%] md:w-[5%] mx-2 md:mx-5  overflow-hidden">
           <img
             // src="./assets/l-page1.png"
-            src="\src\assets\landing-cloud-img.png"
+            src={images[0]}
+            // src="\src\assets\landing-cloud-img.png"
             className="h-[80%] w-[120%] object-cover rounded-3xl"
             alt=""
           />
         </div>
         <div className="image-holder -rotate-2 w-[10%] md:w-[5%] mx-2 md:mx-5  overflow-hidden">
           <img
-            src="\src\assets\landing-web-img.png"
+            // src="\src\assets\landing-web-img.png"
+            src={images[1]}
             className="h-[80%] w-[120%] object-cover rounded-3xl"
             alt=""
           />
         </div>
         <div className="image-holder rotate-2 w-[10%] md:w-[5%] mx-2 md:mx-5  overflow-hidden">
           <img
-            src="\src\assets\landing-byculla-img.jpg"
+            // src="\src\assets\landing-byculla-img.jpg"
+            src={images[2]}
             className="h-[80%] w-[120%] object-cover rounded-3xl"
             alt=""
           />
         </div>
         <div className="image-holder rotate-2 w-[10%] md:w-[5%] mx-2 md:mx-5  overflow-hidden">
           <img
-            src="\src\assets\l-page4.png"
+            // src="\src\assets\l-page4.png"
+            src={images[3]}
             className="h-[80%] w-[120%] object-cover rounded-3xl"
             alt=""
           />
         </div>
         <div className="image-holder rotate-2 w-[10%] md:w-[5%] mx-2 md:mx-5  overflow-hidden">
           <img
-            src="\src\assets\landing-web1-img.webp"
+            // src="\src\assets\landing-web1-img.webp"
+            src={images[4]}
             className="h-[80%] w-[120%] object-cover rounded-3xl"
             alt=""
           />
@@ -182,7 +207,8 @@ const LandingPage = () => {
                   <span className="rounded-3xl border-gray-200 border dark:border-none">
                     <img
                       // src="\src\assets\company-logo1.png"
-                      src="\src\assets\linkcode.jpg"
+                      // src="\src\assets\linkcode.jpg"
+                      src={companyImages[0]}
                       className="w-12 rounded-3xl border-white border-8 dark:border-[#1e1e20]"
                       alt=""
                     />
@@ -209,7 +235,8 @@ const LandingPage = () => {
                 <div className="company-logo rounded-3xl flex flex-row items-center gap-3">
                   <span className="rounded-3xl border-gray-200 border dark:border-none">
                     <img
-                      src="\src\assets\innovatus.png"
+                      // src="\src\assets\innovatus.png"
+                      src={companyImages[1]}
                       className="w-12 rounded-3xl border-white border-8 dark:border-[#1e1e20]"
                       alt=""
                     />
@@ -231,7 +258,8 @@ const LandingPage = () => {
                 <div className="company-logo rounded-3xl flex flex-row items-center gap-3">
                   <span className="rounded-3xl border-gray-200 border dark:border-none">
                     <img
-                      src="\src\assets\campus-infotech.png"
+                      // src="\src\assets\campus-infotech.png"
+                      src={companyImages[2]}
                       className="w-12 rounded-3xl border-white border-8 dark:border-[#1e1e20]"
                       alt=""
                     />
