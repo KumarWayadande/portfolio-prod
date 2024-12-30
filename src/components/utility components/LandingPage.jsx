@@ -1,7 +1,7 @@
 import resume from "../../assets/KUMAR WAYADANDE RESUME_I.pdf";
 import MediaIcon from "./Mediacon";
 import OverviewArticle from "./OverviewArticle";
-
+import profilePhoto from "../../assets/profile_5.png"
 const limitedArticles = [
   {
     id: "ARTICLE_01",
@@ -35,7 +35,7 @@ const LandingPage = () => {
       <div className="landing-page flex flex-col space-y-4 max-w-2xl">
         <div className="profile-container">
           <img
-            src="../../assets/profile_5.png"
+            src={profilePhoto}
             className="w-16 rounded-full border border-gray-200 shadow-sm"
             alt=""
           />
