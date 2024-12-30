@@ -35,7 +35,7 @@ const LandingPage = () => {
       <div className="landing-page flex flex-col space-y-4 max-w-2xl">
         <div className="profile-container">
           <img
-            src="\src\assets\profile_5.png"
+            src="../../assets/profile_5.png"
             className="w-16 rounded-full border border-gray-200 shadow-sm"
             alt=""
           />
