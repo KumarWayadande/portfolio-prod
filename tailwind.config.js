@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import typography from "@tailwindcss/typography";
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class",
@@ -15,5 +16,5 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [typography],
 };
