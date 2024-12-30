@@ -12,7 +12,7 @@ import Image from "./Image";
 
 export default function Article_07() {
   return (
-    <div className="single-article-container mx-auto mt-15 md:mt-20 flex flex-col md:flex-row">
+    <div className="single-article-container px-2 mx-auto mt-15 md:mt-20 flex flex-col md:flex-row">
       <div className="back-aero-container md:basis-1/6 flex-col md:flex-row items-center">
         <div className="flex">
           <ArticleBackButton />

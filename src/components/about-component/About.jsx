@@ -30,7 +30,7 @@ const AboutContainer = () => {
           {/* Scalable AI. */}
         </h1>
       </HeadingContainer>
-      <div className="firsr-section text-justify my-5">
+      <div className="firsr-section text-justify my-5 px-2">
         <div className="first-section-part1 flex flex-col lg:flex-row items-center">
           <div className="first-section-part1-left pr-6">
             <SubHeading>

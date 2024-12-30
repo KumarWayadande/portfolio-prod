@@ -54,7 +54,7 @@ export function NavbarContextProvider({ children }) {
   const [currentPage, setCurrentPage] = useState(<LandingPage />);
   const [darkMode, setDarkMode] = useState(localStorageDarkModeValue);
   const [showModal, setShowModal] = useState(false);
-  let footerCopyRightText = "© 2024 Kumar Wayadande. All rights reserved.";
+  let footerCopyRightText = "© 2025 Kumar Wayadande.";
   console.log("darkMode State value : ", darkMode);
   const handleClick = (Component) => {
     setCurrentPage(<Component />);

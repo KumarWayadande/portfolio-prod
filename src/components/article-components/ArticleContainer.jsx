@@ -15,7 +15,7 @@ const ArticleContainer = () => {
         </SubHeading>
       </HeadingContainer>
 
-      <div className="article-card-container flex flex-col border-l-[1px] dark:border-gray-700 border-b-gray-50 md:w-[80%] sm:pl-5">
+      <div className="article-card-container flex flex-col md:border-l-[1px] dark:border-gray-700 border-b-gray-50 md:w-[80%] pl-1">
         {/* All articles */}
         {ARTICLES.map((article, index) => {
           return <Article {...article} key={index} />;

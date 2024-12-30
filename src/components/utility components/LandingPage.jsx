@@ -52,7 +52,7 @@ const limitedArticles = [
 const LandingPage = () => {
   return (
     <div className="main-page-container">
-      <div className="landing-page flex flex-col space-y-4 max-w-2xl">
+      <div className="landing-page flex flex-col space-y-4 max-w-2xl px-3">
         <div className="profile-container">
           <img
             src={profilePhoto}
@@ -106,7 +106,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="second-section -ml-[23%] sm:-ml-[20%] my-20 flex w-[500%]">
+      <div className="second-section -ml-[23%] sm:-ml-[20%] mt-20 flex w-[500%]">
         <div className="image-holder rotate-2 w-[10%] md:w-[5%] mx-2 md:mx-5  overflow-hidden">
           <img
             // src="./assets/l-page1.png"
@@ -150,7 +150,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="third-section flex md:flex-row flex-col my-20">
+      <div className="third-section flex md:flex-row flex-col mt-10">
         <div className="left flex flex-col w-[100%]">
           {limitedArticles.map((article, index) => {
             return <OverviewArticle {...article} key={index} />;
@@ -203,11 +203,9 @@ const LandingPage = () => {
             </span>
             <div className="companies flex flex-col my-3">
               <div className="work-holder flex my-1 justify-between items-baseline">
-                <div className="company-logo rounded-3xl flex flex-row items-center gap-3">
+                <div className="company-logo rounded-3xl flex flex-row items-center gap-3 mb-3 md:mb-0">
                   <span className="rounded-3xl border-gray-200 border dark:border-none">
                     <img
-                      // src="\src\assets\company-logo1.png"
-                      // src="\src\assets\linkcode.jpg"
                       src={companyImages[0]}
                       className="w-12 rounded-3xl border-white border-8 dark:border-[#1e1e20]"
                       alt=""
@@ -220,19 +218,21 @@ const LandingPage = () => {
                     </h5>
                     <p className="text-stone-400 text-sm">
                       Front End Developer
+                      <br />
+                      <span className="md:hidden lg:hidden">2022-23</span>
                     </p>
                   </div>
                 </div>
 
                 <div className="year">
-                  <span className="timeline text-stone-400 text-xs">
+                  <span className="timeline text-stone-400 text-xs hidden md:block lg:block">
                     2022-23
                   </span>
                 </div>
               </div>
 
               <div className="work-holder flex my-1 justify-between items-baseline">
-                <div className="company-logo rounded-3xl flex flex-row items-center gap-3">
+                <div className="company-logo rounded-3xl flex flex-row items-center gap-3 mb-3 md:mb-0">
                   <span className="rounded-3xl border-gray-200 border dark:border-none">
                     <img
                       // src="\src\assets\innovatus.png"
@@ -245,17 +245,21 @@ const LandingPage = () => {
                   <div className="company-info">
                     <h5 className="font-semibold text-sm dark:text-stone-100">
                       Innovatus Technologies
+                      <br />
+                      <span className="md:hidden lg:hidden">2023</span>
                     </h5>
                     <p className="text-stone-400 text-sm">Backend Developer</p>
                   </div>
                 </div>
 
                 <div className="year">
-                  <span className="timeline text-stone-400 text-xs">2023</span>
+                  <span className="timeline text-stone-400 text-xs hidden md:block lg:block">
+                    2023
+                  </span>
                 </div>
               </div>
               <div className="work-holder flex my-1 justify-between items-baseline">
-                <div className="company-logo rounded-3xl flex flex-row items-center gap-3">
+                <div className="company-logo rounded-3xl flex flex-row items-center gap-3 mb-3 md:mb-0">
                   <span className="rounded-3xl border-gray-200 border dark:border-none">
                     <img
                       // src="\src\assets\campus-infotech.png"
@@ -268,6 +272,10 @@ const LandingPage = () => {
                   <div className="company-info">
                     <h5 className="font-semibold text-sm dark:text-stone-100">
                       Campus Infotech
+                      <br />
+                      <span className="md:hidden lg:hidden">
+                        2024-25 present
+                      </span>
                     </h5>
                     <p className="text-stone-400 text-sm">
                       AWS Cloud Practitioner
@@ -276,7 +284,7 @@ const LandingPage = () => {
                 </div>
 
                 <div className="year">
-                  <span className="timeline text-stone-400 text-xs">
+                  <span className="timeline text-stone-400 text-xs hidden md:block lg:block">
                     2024-25 present
                   </span>
                 </div>

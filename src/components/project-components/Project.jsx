@@ -1,7 +1,7 @@
 import ProjectLink from './ProjectLink';
 const Project = (prop) => {
   return (
-    <div className="box1 group flex flex-col pl-2 md:pl-8 pr-20 py-2 rounded-3xl hover:bg-gray-50 dark:hover:bg-[#252529] cursor-pointer">
+    <div className="box1 w-[100%] group flex flex-col pl-2 md:pl-8 md:pr-20 py-2 rounded-3xl hover:bg-gray-50 dark:hover:bg-[#252529] cursor-pointer">
       <span className="rounded-3xl">
         <img
           src={prop.projectLogo}
