@@ -6,8 +6,8 @@ import ArticleDate from "./ArticleDate";
 import ArticleHeading from "./ArticleHeading";
 // import Markdown from 'react-markdown'
 const Article = (prop) => {
-  console.log("Article", prop, prop.data);
-  
+  // console.log("Article", prop, prop.data);
+
   const handleClick = () => {
     window.scrollTo({
       top: 0,
@@ -17,11 +17,10 @@ const Article = (prop) => {
   return (
     <div className="article-row flex flex-col md:flex-row">
       <ArticleDate articleDate={prop.date} />
-      <Link to={`${prop.documentId}`} onClick={handleClick}>
+      <Link to={`${prop.articleHeading}`} onClick={handleClick}>
         <ArticleContentsContainer>
           <ArticleHeading articleHeading={prop.articleHeading} />
-          <ArticleContents article={prop.articleDesc} />
-          {/* <Markdown>{prop.ArticleImageEditor}</Markdown> */}
+          <ArticleContents article={prop.article} />
           <ArticleButton />
         </ArticleContentsContainer>
       </Link>
