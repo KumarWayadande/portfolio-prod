@@ -4,7 +4,7 @@
 // This file contains all the functions and states used for navbar and its buttons
 // This file contains all the functions and states used for navbar and its buttons 
 // This file contains all the
-
+import { TiThMenu } from "react-icons/ti";
 import { createContext, useState } from "react";
 import LandingPage from "../components/utility components/LandingPage";
 import { IoSunny } from "react-icons/io5";
@@ -22,31 +22,34 @@ export const NavbarContext = createContext({
   footerCopyRightText: "",
 });
 
-const LIGHT_MODE_ICON = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    height="24px"
-    viewBox="0 0 24 24"
-    width="24px"
-    fill="#434343"
-  >
-    <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
-    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
-  </svg>
-);
+const LIGHT_MODE_ICON = <TiThMenu color="#1fbcaa" />;
+const DARK_MODE_ICON = <TiThMenu color="#1fbcaa" />
 
-const DARK_MODE_ICON = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    height="24px"
-    viewBox="0 0 24 24"
-    width="24px"
-    fill="#1fbcaa"
-  >
-    <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
-    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
-  </svg>
-);
+// const LIGHT_MODE_ICON = (
+//   <svg
+//     xmlns="http://www.w3.org/2000/svg"
+//     height="24px"
+//     viewBox="0 0 24 24"
+//     width="24px"
+//     fill="#434343"
+//   >
+//     <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+//     <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+//   </svg>
+// );
+
+// const DARK_MODE_ICON = (
+//   <svg
+//     xmlns="http://www.w3.org/2000/svg"
+//     height="24px"
+//     viewBox="0 0 24 24"
+//     width="24px"
+//     fill="#1fbcaa"
+//   >
+//     <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+//     <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+//   </svg>
+// );
 
 export function NavbarContextProvider({ children }) {
   const localStorageDarkModeValue =
