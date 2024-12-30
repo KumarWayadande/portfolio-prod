@@ -116,7 +116,7 @@
 
 export default function Logos() {
   return (
-    <div className="flex overflow-hidden space-x-16">
+    <div className="flex overflow-hidden space-x-16 my-20">
       <div className="flex space-x-16 animate-loop-scroll group-hover:paused">
         <img
           loading="lazy"

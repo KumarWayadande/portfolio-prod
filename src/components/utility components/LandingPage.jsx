@@ -4,25 +4,28 @@ import OverviewArticle from "./OverviewArticle";
 
 const limitedArticles = [
   {
-    id: "Article_01",
-    articleHeading: "Crafting a design system for a multiplanetary future",
-    articleDate: "September 5, 2024",
-    articleDesc:
-      "Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.",
+    id: "ARTICLE_01",
+    date: "January 25 2015",
+    articleHeading: "Building Scalable Web Architectures: Best Practices",
+    article:
+      "Discover strategies to design web systems that grow with demand. Learn about distributed architectures, load balancing, and failover mechanisms. Optimize scalability while maintaining system reliability.",
+    slug: "Article_01",
   },
   {
-    id: "Article_02",
-    articleHeading: "Crafting a design system for a multiplanetary future",
-    articleDate: "September 5, 2024",
-    articleDesc:
-      "Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.",
+    id: "ARTICLE_02",
+    date: "September 17, 1995",
+    articleHeading: "Understanding Machine Learning: Key Algorithms Explained",
+    article:
+      "An overview of fundamental machine learning algorithms like regression, clustering, and neural networks. Explore how these algorithms solve real-world problems. Perfect for beginners to grasp core concepts.",
+    slug: "Article_02",
   },
   {
-    id: "Article_02",
-    articleHeading: "Crafting a design system for a multiplanetary future",
-    articleDate: "September 5, 2024",
-    articleDesc:
-      "Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.",
+    id: "ARTICLE_03",
+    date: "September 17, 1995",
+    articleHeading: "The Future of Quantum Computing in Everyday Technology",
+    article:
+      "Quantum computing promises exponential processing power. Discover its potential in cryptography, AI, and simulations. Understand how it could revolutionize industries in the near future.",
+    slug: "Article_03",
   },
 ];
 

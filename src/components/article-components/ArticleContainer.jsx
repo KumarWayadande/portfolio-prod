@@ -7,14 +7,12 @@ const ArticleContainer = () => {
   return (
     <div className="article-container my-20">
       <HeadingContainer>
-        <Heading
-          heading="Writing on software design, company building, and the aerospace
-          industry."
-        />
-        <SubHeading
-          subHeading="All of my long-form thoughts on programming, leadership, product
-          design, and more, collected in chronological order."
-        />
+        <Heading heading="Writing on software design, website building, and the research projects." />
+        <SubHeading>
+          All of my long-form thoughts on programming, cloud computing, website
+          design, mumbai&apos;s underbelly exploration and more, collected in
+          chronological order.
+        </SubHeading>
       </HeadingContainer>
 
       <div className="article-card-container flex flex-col border-l-[1px] dark:border-gray-700 border-b-gray-50 md:w-[80%] sm:pl-5">

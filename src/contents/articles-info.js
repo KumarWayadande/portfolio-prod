@@ -1,52 +1,59 @@
 const ARTICLES = [
   {
     id: "ARTICLE_01",
-    date: new Date("January 25 2015"),
-    articleHeading: "Crafting a design system for a multiplanetary future",
+    date: "January 25 2015",
+    articleHeading: "Building Scalable Web Architectures: Best Practices",
     article:
-      "Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.",
+      "Discover strategies to design web systems that grow with demand. Learn about distributed architectures, load balancing, and failover mechanisms. Optimize scalability while maintaining system reliability.",
+    slug: "Article_01",
   },
   {
     id: "ARTICLE_02",
-    date: new Date("September 17, 1995"),
-    articleHeading: "Crafting a design system for a multiplanetary future",
+    date: "September 17, 1995",
+    articleHeading: "Understanding Machine Learning: Key Algorithms Explained",
     article:
-      " Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.",
+      "An overview of fundamental machine learning algorithms like regression, clustering, and neural networks. Explore how these algorithms solve real-world problems. Perfect for beginners to grasp core concepts.",
+    slug: "Article_02",
   },
   {
     id: "ARTICLE_03",
-    date: new Date("September 17, 1995"),
-    articleHeading: "Crafting a design system for a multiplanetary future",
+    date: "September 17, 1995",
+    articleHeading: "The Future of Quantum Computing in Everyday Technology",
     article:
-      " Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.",
+      "Quantum computing promises exponential processing power. Discover its potential in cryptography, AI, and simulations. Understand how it could revolutionize industries in the near future.",
+    slug: "Article_03",
   },
   {
     id: "ARTICLE_04",
-    date: new Date("September 17, 1995"),
-    articleHeading: "Crafting a design system for a multiplanetary future",
+    date: "September 17, 1995",
+    articleHeading: "How Blockchain is Reshaping Data Security",
     article:
-      " Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.",
+      "Blockchain offers unparalleled data integrity and transparency. Learn how decentralized ledgers are transforming security. Applications in finance, supply chain, and identity verification are explored.",
+    slug: "Article_04",
   },
   {
     id: "ARTICLE_05",
-    date: new Date("September 17, 1995"),
-    articleHeading: "Crafting a design system for a multiplanetary future",
+    date: "September 17, 1995",
+    articleHeading: "Advancements in AI: Ethical Challenges and Opportunities",
     article:
-      " Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.",
+      "AI technology is advancing rapidly, raising ethical questions. Explore concerns around bias, privacy, and job automation. Understand the balance between innovation and responsibility.",
+    slug: "Article_05",
   },
   {
     id: "ARTICLE_06",
-    date: new Date("September 17, 1995"),
-    articleHeading: "Crafting a design system for a multiplanetary future",
+    date: "September 17, 1995",
+    articleHeading: "The Role of Cloud Computing in Modern Development",
     article:
-      " Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.",
+      "Cloud computing has revolutionized software development and deployment. Discover benefits like scalability, cost-efficiency, and collaboration. Understand how it's reshaping development workflows globally.",
+    slug: "Article_06",
   },
   {
     id: "ARTICLE_07",
-    date: new Date("September 17, 1995"),
-    articleHeading: "Crafting a design system for a multiplanetary future",
+    date: "September 17, 1995",
+    articleHeading: "Cybersecurity Trends to Watch in 2024",
     article:
-      " Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.",
+      "Stay ahead with insights into evolving cybersecurity threats. Learn about AI-driven security, zero-trust models, and quantum-safe encryption. Protect your systems in an increasingly digital world.",
+    slug: "Article_07",
   },
 ];
 

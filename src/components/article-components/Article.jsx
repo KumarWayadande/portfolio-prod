@@ -17,7 +17,7 @@ const Article = (prop) => {
   return (
     <div className="article-row flex flex-col md:flex-row">
       <ArticleDate articleDate={prop.date} />
-      <Link to={`${prop.articleHeading}`} onClick={handleClick}>
+      <Link to={`${prop.slug}`} onClick={handleClick}>
         <ArticleContentsContainer>
           <ArticleHeading articleHeading={prop.articleHeading} />
           <ArticleContents article={prop.article} />

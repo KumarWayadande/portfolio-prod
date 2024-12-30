@@ -9,6 +9,13 @@ import Error from "../utility components/Error.jsx";
 import TempSingleArticle from "../article-components/single-article/TempSingleArticle.jsx";
 import ArticleRootLayout from "./ArticleRootLayout.jsx";
 import AboutContainer from "../about-component/About.jsx";
+import Article_01 from "../article-components/single-article/Article_01.jsx";
+import Article_02 from "../article-components/single-article/Article_02.jsx";
+import Article_03 from "../article-components/single-article/Article_03.jsx";
+import Article_04 from "../article-components/single-article/Article_04.jsx";
+import Article_05 from "../article-components/single-article/Article_05.jsx";
+import Article_06 from "../article-components/single-article/Article_06.jsx";
+import Article_07 from "../article-components/single-article/Article_07.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,8 +32,32 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <ArticleContainer /> },
           {
-            path: ":id",
-            element: <TempSingleArticle />,
+            path: "Article_01",
+            element: <Article_01 />,
+          },
+          {
+            path: "Article_02",
+            element: <Article_02 />,
+          },
+          {
+            path: "Article_03",
+            element: <Article_03 />,
+          },
+          {
+            path: "Article_04",
+            element: <Article_04 />,
+          },
+          {
+            path: "Article_05",
+            element: <Article_05 />,
+          },
+          {
+            path: "Article_06",
+            element: <Article_06 />,
+          },
+          {
+            path: "Article_07",
+            element: <Article_07 />,
           },
         ],
       },

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Logos from "./Logos";
 import Services from "./Services";
 import Newsletter from "./Newsletter";
+import TechStack from "./TechStack";
 const AboutContainer = () => {
   return (
     <div>
@@ -146,9 +147,19 @@ const AboutContainer = () => {
           <Services />
         </div>
 
+        <div className="fifth-section mt-10 text-center">
+          <h1 className="my-14 text-4xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
+            Tech Stack, tools used to build this{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+              {" "}
+              portfolio...
+            </span>{" "}
+          </h1>
+          <TechStack />
+        </div>
+
         <div className="newsletter">
           <Newsletter />
-         
         </div>
       </div>
     </div>

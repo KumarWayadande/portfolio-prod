@@ -3,7 +3,7 @@ import MediaIcon from "../utility components/Mediacon";
 export default function Newsletter() {
   return (
     <div>
-      <div className="flex h-full justify-center items-center dark:bg-[#252529]">
+      <div className="flex h-full justify-center items-center dark:bg-[#252529] my-20">
         <div className="">
           <div className="flex flex-wrap items-center w-full p-5 text-left border shadow-sm border-gray-200 rounded lg:flex-nowrap md:p-8 dark:border-gray-700">
             <div className="flex-1 w-full mb-5 md:mb-0 md:pr-5 lg:pr-10 md:w-1/2">

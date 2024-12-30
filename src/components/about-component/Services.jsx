@@ -14,7 +14,7 @@ import open_source from "../../assets/open-source.png";
 
 export default function Services() {
   return (
-    <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-[#252529]">
+    <div className="grid my-20 mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-[#252529]">
       <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-[#252529] dark:border-gray-700">
         <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -114,8 +114,7 @@ export default function Services() {
           <p className="my-4">
             Through wandering, I embrace adventure and use the lessons learned
             to bring depth and meaning to my projects. If you’re looking for
-            someone who thrives on exploration and thrives on creative energy,
-            let’s connect!
+            someone who thrives on exploration, let’s connect! Mostly exploring mumbai&apos;s underbelly secretly.
           </p>
         </blockquote>
         <figcaption className="flex items-center justify-center ">
