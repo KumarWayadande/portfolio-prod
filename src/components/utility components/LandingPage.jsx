@@ -245,10 +245,12 @@ const LandingPage = () => {
                   <div className="company-info">
                     <h5 className="font-semibold text-sm dark:text-stone-100">
                       Innovatus Technologies
+                    </h5>
+                    <p className="text-stone-400 text-sm">
+                      Backend Developer
                       <br />
                       <span className="md:hidden lg:hidden">2023</span>
-                    </h5>
-                    <p className="text-stone-400 text-sm">Backend Developer</p>
+                    </p>
                   </div>
                 </div>
 
@@ -272,13 +274,13 @@ const LandingPage = () => {
                   <div className="company-info">
                     <h5 className="font-semibold text-sm dark:text-stone-100">
                       Campus Infotech
+                    </h5>
+                    <p className="text-stone-400 text-sm">
+                      AWS Cloud Practitioner
                       <br />
                       <span className="md:hidden lg:hidden">
                         2024-25 present
                       </span>
-                    </h5>
-                    <p className="text-stone-400 text-sm">
-                      AWS Cloud Practitioner
                     </p>
                   </div>
                 </div>
