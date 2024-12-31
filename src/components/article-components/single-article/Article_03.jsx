@@ -5,7 +5,7 @@ import ArticleBackButton from "./ArticleBackBtn";
 import Heading from "./Heading";
 import Contents from "./Contents";
 import banner from "../../../assets/Article_03_banner.jpg";
-import ExtLink from "./ExtLink";
+// import ExtLink from "./ExtLink";
 import CodeEditor from "./CodeEditor";
 import Image from "./Image";
 import ARTICLES from "../../../contents/articles-info";
@@ -43,7 +43,6 @@ export default function Article_03() {
         <CodeEditor>
           {`array.map(callback(element, index, array), thisArg);`}
         </CodeEditor>
-
         <Contents>
           <ul>
             <li>
@@ -66,14 +65,13 @@ export default function Article_03() {
           </ul>
           <Heading>Example: Basic Usage</Heading>
         </Contents>
-
+        W
         <CodeEditor>
           {`const numbers = [1, 2, 3, 4];
 const doubled = numbers.map(num => num * 2);
 console.log(doubled); // Output: [2, 4, 6, 8]
 `}
         </CodeEditor>
-
         <Contents>
           <Heading>Features of `map()`</Heading>
           <ul>
@@ -93,13 +91,11 @@ console.log(doubled); // Output: [2, 4, 6, 8]
           </ul>
         </Contents>
         <Heading>Practical Examples</Heading>
-
         <Contents>
           <Heading>1. Transforming Data</Heading>
           You can use `map()` to transform data into a different format or
           structure.
         </Contents>
-
         <CodeEditor>
           {`const users = [
   { id: 1, name: 'Alice' },
@@ -111,7 +107,6 @@ const usernames = users.map(user => user.name);
 
 console.log(usernames); // Output: ['Alice', 'Bob', 'Charlie']`}
         </CodeEditor>
-
         <Contents>
           <Heading>2. Adding Properties to Objects</Heading>
           Use `map()` to add or modify properties of objects in an array.
@@ -131,7 +126,6 @@ console.log(productsWithTax);
 // Output: [{ name: 'Laptop', price: 1000, priceWithTax: 1100 }, { name: 'Phone', price: 500, priceWithTax: 550 }]
 `}
         </CodeEditor>
-
         <Contents>
           <Heading>3. Converting Strings to Numbers</Heading>
           If you have an array of strings, `map()` can convert them to numbers.
@@ -142,20 +136,17 @@ const numbers = strings.map(Number);
 console.log(numbers); // Output: [1, 2, 3]`}
           </CodeEditor>
         </Contents>
-
         <Contents>
           <Heading>4. Flattening Nested Arrays</Heading>
           While `map()` alone cannot completely flatten nested arrays, it can
           assist in partial flattening when combined with other methods.
         </Contents>
         <CodeEditor>
-          const nested = [[1, 2], [3, 4], [5, 6]]; const flattened =
+          {`const nested = [[1, 2], [3, 4], [5, 6]]; const flattened =
           nested.map(arr => arr.join(',')); console.log(flattened); // Output:
-          ['1,2', '3,4', '5,6']
+          ['1,2', '3,4', '5,6']`}
         </CodeEditor>
-
         <Heading>Common Mistakes</Heading>
-
         <Contents>
           <Heading>1. Not Returning a Value</Heading>
           The callback function must return a value; otherwise, the resulting
@@ -170,7 +161,6 @@ const result = numbers.map(num => {
 
 console.log(result); // Output: [undefined, undefined, undefined]`}
         </CodeEditor>
-
         <Contents>
           <Heading>2. Using `map()` When `forEach()` is Sufficient</Heading>
           If you do not need the transformed array, prefer `forEach()` instead.
@@ -180,9 +170,7 @@ console.log(result); // Output: [undefined, undefined, undefined]`}
 // Inefficient use of map()
 [1, 2, 3].map(num => console.log(num)); // Use forEach() instead`}
         </CodeEditor>
-
         <Heading> Advanced Use Cases</Heading>
-
         <Contents>
           <Heading>1. Chaining with Other Methods</Heading>
         </Contents>
@@ -194,7 +182,6 @@ const result = numbers
 
 console.log(result); // Output: [6, 8]`}
         </CodeEditor>
-
         <Contents>
           <Heading>2. Async Operations</Heading>
           While `map()` does not support asynchronous callbacks directly, it can
@@ -210,7 +197,6 @@ const fetchData = async () => {
 
 fetchData();`}
         </CodeEditor>
-
         <Heading> Conclusion</Heading>
         <Contents>
           The `map()` function is a cornerstone of modern JavaScript
