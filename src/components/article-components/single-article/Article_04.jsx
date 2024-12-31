@@ -4,12 +4,11 @@
 import ArticleBackButton from "./ArticleBackBtn";
 import Heading from "./Heading";
 import Contents from "./Contents";
-import banner from "../../../assets/aero_function_banner-3.png";
-import Date from "./Date";
+import banner from "../../../assets/Article_04_banner.jpg";
+import ARTICLES from "../../../contents/articles-info";
 import ExtLink from "./ExtLink";
-import CodeEditor from "./CodeEditor";
 import Image from "./Image";
-
+import CodeEditor from "./CodeEditor"
 export default function Article_04() {
   return (
     <div className="single-article-container px-2 mx-auto mt-15 md:mt-20 flex flex-col md:flex-row">
@@ -19,187 +18,197 @@ export default function Article_04() {
         </div>
       </div>
       <div className="article-contents-container max-w-2xl basis-10/12">
-        <Date />
-        <Heading extraClasses="mb-15">Introduction to Javascript</Heading>
-        <Contents>
-          The{" "}
-          <ExtLink link="http://www.ecma-international.org/ecma-262/6.0/">
-            2015 edition of the ECMAScript specification (ES6)
-          </ExtLink>{" "}
-          added arrow function expressions to the{" "}
-          <ExtLink link="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">
-            Javascript
-          </ExtLink>{" "}
-          language. Arrow functions are a new way to write anonymous function
-          expressions, and are similar to
-          <ExtLink> lambda functions </ExtLink>in some other programming
-          languages, such as <ExtLink>Python.</ExtLink>
-        </Contents>
+        <p className="article-date text-stone-300 dark:text-stone-600 font-semibold text-[100%] mb-10">
+          <span className="mr-3 font-bold h-3">|</span>
+          {ARTICLES[3].date}
+        </p>
+        <Heading extraClasses="mb-15">{ARTICLES[3].articleHeading}</Heading>
+        <Contents>{ARTICLES[3].article}</Contents>
         <Image src={banner} className="rounded-xl my-10" />
-        <Contents>
-          Arrow functions differ from traditional functions in a number of ways,
-          including the way their scope is determined and how their syntax is
-          expressed. Because of this, arrow functions are particularly useful
-          when passing a function as a parameter to a higher-order function,
-          such as when you are looping over an <ExtLink>array</ExtLink> with{" "}
-          <ExtLink>built-in iterator methods</ExtLink>. Their syntactic
-          abbreviation can also allow you to improve the readability of your
-          code.
-        </Contents>
-        <Contents>
-          In this article, you will review function declarations and
-          expressions, learn about the differences between traditional function
-          expressions and arrow function expressions, learn about lexical scope
-          as it pertains to arrow functions, and explore some of the syntactic
-          shorthand permitted with arrow functions.
-        </Contents>
-        <Heading>Defining Functions</Heading>
+        <Heading>Prerequisites</Heading>
         <hr className="border-slate-200 dark:border-[#35353b]" />
         <Contents>
-          Before delving into the specifics of arrow function expressions, this
-          tutorial will briefly review traditional JavaScript functions in order
-          to better show the unique aspects of arrow functions later on.
+          <Heading>Before starting, ensure you have the following: </Heading>
+          <ul>
+            <b>
+              <li>AWS Account:</li>
+            </b>
+            You need an active AWS account. Sign up at aws.amazon.com if you
+            don’t already have one.
+            <b>
+              <li>IAM Role or User Permissions:</li>
+            </b>
+            Ensure your user account has permissions to create and manage EC2
+            instances.
+            <b>
+              <li>Basic Understanding of AWS:</li>
+            </b>
+            Familiarity with the AWS Management Console is helpful.
+          </ul>
         </Contents>
         <Contents>
-          The <ExtLink>How To Define Functions in JavaScript</ExtLink> tutorial
-          earlier in this series introduced the concept of function declarations
-          and function expressions. A function declaration is a named function
-          written with the <var>function</var> keyword. Function declarations
-          load into the execution context before any code runs. This is known as
-          hoisting, meaning you can use the function before you declare it.
+          <Heading>Step 1:</Heading>
+          <ol>
+            <li>
+              1. Log In to AWS Management Console Go to the AWS Management
+              Console.
+            </li>
+            <li>2. Sign in with your credentials.</li>
+            <li>
+              3. Navigate to the EC2 Dashboard by typing "EC2" in the search bar
+              and selecting it from the results.
+            </li>
+          </ol>
         </Contents>
         <Contents>
-          Here is an example of a sum function that returns the sum of two
-          parameters:
-        </Contents>
-        <CodeEditor>
-          {`function sum(a, b){
-  return a + b;
-}`}
-        </CodeEditor>
-        <Contents>
-          You can execute the<var> sum</var> function before declaring the
-          function due to hoisting:
-        </Contents>
-        <CodeEditor>
-          {`sum(a, b);
-function sum(a, b){
-   return a + b;
-}`}
-        </CodeEditor>
-        <Contents>Running this code would give the following output:</Contents>
-        <CodeEditor isOutput>3</CodeEditor>
-        <Contents>
-          You can find the name of the function by logging the function itself:
-        </Contents>
-        <CodeEditor>{`console.log(sum);`}</CodeEditor>
-        <Contents>This will return the function, along with its name:</Contents>
-        <CodeEditor isOutput>{`ƒ sum(a, b) {
-    return a + b
-}`}</CodeEditor>
-        <Contents>
-          A function expression is a function that is not pre-loaded into the
-          execution context, and only runs when the code encounters it. Function
-          expressions are usually assigned to a variable, and can be anonymous,
-          meaning the function has no name.
+          <Heading>Step 2:</Heading>
+          <ol>
+            <li>
+              1. Launch an EC2 Instance On the EC2 Dashboard, click the "Launch
+              Instance" button.
+            </li>
+            <li>
+              2. Provide a name for your instance in the "Name and tags" section
+              to identify it easily.
+            </li>
+          </ol>
         </Contents>
         <Contents>
-          In this example, write the same <strong>sum</strong> function as an
-          anonymous function expression:
-        </Contents>
-        <CodeEditor>{`const sum = function (a, b) {
-    return a + b
-}`}</CodeEditor>
-        <Contents>
-          You`&apos;`ve now assigned the anonymous function to the{" "}
-          <var>sum</var> constant. Attempting to execute the function before it
-          is declared will result in an error:
-        </Contents>
-        <CodeEditor>
-          {`sum(1, 2)
-
-const sum = function (a, b) {
-    return a + b
-}`}
-        </CodeEditor>
-        <Contents>Running this will give:</Contents>
-        <CodeEditor
-          isOutput
-        >{`Uncaught ReferenceError: Cannot access 'sum' before initialization`}</CodeEditor>
-        <Contents>
-          Also, note that the function does not have a named identifier. To
-          illustrate this, write the same anonymous function assigned to{" "}
-          <var>sum</var>, then log <var>sum</var> to the console:
-        </Contents>
-        <CodeEditor>
-          {`const sum = function (a, b) {
-  return a + b
-}
-
-console.log(sum)`}
-        </CodeEditor>
-        <Contents>This will show you the following:</Contents>
-        <CodeEditor isOutput>{`ƒ (a, b) {
-  return a + b
-}`}</CodeEditor>
-        <Contents>
-          The value of sum is an anonymous function, not a named function.
+          <Heading>Step 3:</Heading>
+          <ol>
+            <li>
+              1. Choose an Amazon Machine Image (AMI) Select an AMI that suits
+              your needs. Options include:
+              <ul className="pl-4">
+                <li>
+                  <b>Amazon Linux:</b> Lightweight and optimized for AWS.
+                </li>
+                <li>
+                  <b>Ubuntu:</b> Popular for developers and versatile
+                  applications.
+                </li>
+                <li>
+                  <b>Windows Server:</b> Ideal for Windows-based applications.
+                </li>
+              </ul>
+            </li>
+            <li>2. Click "Select" next to your chosen AMI.</li>
+          </ol>
         </Contents>
         <Contents>
-          You can name <strong>function</strong> expressions written with the
-          function keyword, but this is not popular in practice. One reason you
-          might want to name a function expression is to make error stack traces
-          easier to debug.
+          <Heading>Step 4:</Heading>
+          <ol>
+            <li>
+              Choose an Instance Type Choose an instance type based on your
+              application’s resource needs. For example:
+              <ul className="pl-4">
+                <li>
+                  <b>At2.micro:</b> Free tier eligible, suitable for light
+                  workloads.
+                </li>
+                <li>
+                  <b>m5.large:</b> More powerful, suitable for medium workloads.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Click "Next: Configure Instance Details" after selecting the type.
+            </li>
+          </ol>
         </Contents>
         <Contents>
-          Consider the following function, which uses an{" "}
-          <ExtLink>if statement</ExtLink> to throw an error if the function
-          parameters are missing:
-        </Contents>
-        <CodeEditor>
-          {`const sum = function namedSumFunction(a, b) {
-    if (!a || !b)
-      throw new Error('Parameters are required.')
-
-    return a + b
-}
-
-sum();`}
-        </CodeEditor>
-        <Contents>
-          The highlighted section gives the function a name, and then the
-          function uses the <strong>or ||</strong> operator to throw an error{" "}
-          <ExtLink>object</ExtLink> if either of the parameters is missing.
-        </Contents>
-
-        <Contents>Running this code will give you the following:</Contents>
-        <CodeEditor isOutput>{`Uncaught Error: Parameters are required.
-  at namedSumFunction (<anonymous>:3:23)
-  at <anonymous>:1:1`}</CodeEditor>
-        <Contents>
-          In this case, naming the function gives you a quick idea of where the
-          error is.
+          <Heading>Step 5:</Heading>
+          <ol>
+            <li>
+              Configure Instance Details Number of Instances: Specify the number
+              of instances to launch.
+              <ul className="pl-4">
+                <li>
+                  <b>Network Settings:</b> Choose a VPC and subnet (default
+                  options are typically fine).
+                </li>
+                <li>
+                  <b>IAM Role:</b> Attach an IAM role if your instance requires
+                  access to other AWS services.
+                </li>
+              </ul>
+            </li>
+            <li>Click "Next: Add Storage" to proceed.</li>
+          </ol>
         </Contents>
         <Contents>
-          An <ExtLink>arrow function expression</ExtLink> is an anonymous
-          function expression written with the &quot;fat arrow&quot; syntax
-          (=&gt;).
+          <Heading>Step 6:</Heading>
+          <ol>
+            <li>
+              Add Tags (Optional) Tags help organize resources. Add key-value
+              pairs such as: Key: Environment Value: Development
+            </li>
+            <li>Click "Next: Configure Security Group" to continue.</li>
+          </ol>
         </Contents>
         <Contents>
-          Rewrite the <strong>sum</strong> function with arrow function syntax:
+          <Heading>Step 7:</Heading>
+          <ol>
+            <li>
+              Configure Security Group Create a new security group or select an
+              existing one.
+            </li>
+            <li>
+              Define inbound rules to allow traffic: SSH (Port 22): For remote
+              login (limit access to your IP for security). HTTP/HTTPS (Port
+              80/443): If hosting a web application.
+            </li>
+          </ol>
         </Contents>
-        <CodeEditor>
-          {`const sum = (a, b) => {
-   return a + b
-}`}
-        </CodeEditor>
         <Contents>
-          Like traditional function expressions, arrow functions are not
-          hoisted, and so you cannnot call them before you declare them. They
-          are also always anonymous—there is no way to name an arrow function.
-          In the next section, you will explore more of the syntactical and
-          practical differences between arrow functions and traditional
-          functions.
+          <Heading>Step 8:</Heading>
+          <ol>
+            <li>Click "Review and Launch".</li>
+            <li>
+              Review and Launch Review all the configurations to ensure
+              correctness.
+            </li>
+            <li> Click "Launch" to initiate the instance creation. </li>
+          </ol>
+        </Contents>
+        <Contents>
+          <Heading>Step 9:</Heading>
+          <ol>
+            <li>
+              Select or Create a Key Pair Choose an existing key pair or create
+              a new one for SSH access.
+            </li>
+            <li>
+              Download the key pair (if creating a new one) and store it
+              securely.
+            </li>
+            <li> Confirm by clicking "Launch Instances". </li>
+          </ol>
+        </Contents>
+        <Contents>
+          <Heading>Step 10:</Heading>
+          <ol>
+            <li>
+              Access Your Instance Navigate to the EC2 Dashboard and locate your
+              instance under "Instances".
+            </li>
+            <li>
+              Copy the public IP or DNS. Connect using SSH:
+            </li>
+          </ol>
+        </Contents>
+              <CodeEditor>
+                {`ssh -i /path/to/your-key.pem ec2-user@your-instance-public-ip`}
+              </CodeEditor>
+        <Contents>
+          <Heading>Conclusion:</Heading>
+          <p>
+            Congratulations! You’ve successfully created and launched an AWS EC2
+            instance. With this foundation, you can explore further
+            configurations such as setting up a web server, deploying
+            applications, or creating backups. AWS EC2’s flexibility makes it a
+            go-to choice for a wide range of cloud computing needs.
+          </p>
         </Contents>
       </div>
     </div>

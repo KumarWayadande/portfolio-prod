@@ -34,22 +34,22 @@ export default function TechStack() {
         </li>
         <li>
           <a href="#" className="text-md text-blue-500">
-            AWS EC2
+            Heroku
           </a>
         </li>
         <li>
           <a href="#" className="text-2xl text-indigo-500">
-            AWS Cloudfront
+            Postgres
           </a>
         </li>
         <li>
           <a href="#" className="text-xl text-indigo-500">
-            AWS VPC
+            Heroku VPC
           </a>
         </li>
         <li>
           <a href="#" className="text-md text-blue-500">
-            AWS S3
+            Hostinger
           </a>
         </li>
         <li>
@@ -67,7 +67,7 @@ export default function TechStack() {
         </li>
         <li>
           <a href="#" className="text-3xl text-cyan-500">
-            SQlite
+            License Archives
           </a>
         </li>
         <li>
@@ -77,12 +77,12 @@ export default function TechStack() {
         </li>
         <li>
           <a href="#" className="text-4xl text-red-500">
-            AWS RDS
+            ExpressJS
           </a>
         </li>
         <li>
           <a href="#" className="text-lg text-gray-500">
-            AWS Elastic IP
+            Cloudinary
           </a>
         </li>
         <li>

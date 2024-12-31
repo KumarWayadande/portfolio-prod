@@ -16,10 +16,6 @@ export default function Newsletter() {
               </p>
               <div className="social-media-icons-container flex space-x-5 my-4">
                 <MediaIcon
-                  class="fa-brands fa-github"
-                  link="https://github.com/KumarWayadande"
-                />
-                <MediaIcon
                   class="fa-brands fa-linkedin"
                   link="https://www.linkedin.com/in/kumar-wayadande/"
                 />
@@ -35,6 +31,13 @@ export default function Newsletter() {
                 <MediaIcon
                   class="fa-brands fa-facebook"
                   link="https://facebook.com/kumar.wayadande"
+                />
+                <MediaIcon
+                  class="fa-brands fa-github"
+                  // link="https://github.com/KumarWayadande"
+                  onClick={() => {
+                    alert("Please try after 2 days.");
+                  }}
                 />
               </div>
             </div>

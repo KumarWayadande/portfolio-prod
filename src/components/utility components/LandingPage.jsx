@@ -25,7 +25,7 @@ const images = [
 const limitedArticles = [
   {
     id: "ARTICLE_01",
-    date: "January 25 2015",
+    date: "December 27, 2024",
     articleHeading: "Building Scalable Web Architectures: Best Practices",
     article:
       "Discover strategies to design web systems that grow with demand. Learn about distributed architectures, load balancing, and failover mechanisms. Optimize scalability while maintaining system reliability.",
@@ -33,16 +33,16 @@ const limitedArticles = [
   },
   {
     id: "ARTICLE_02",
-    date: "September 17, 1995",
-    articleHeading: "Understanding Machine Learning: Key Algorithms Explained",
+    date: "December 24, 2024",
+    articleHeading: "Understanding JavaScript Arrow Functions",
     article:
-      "An overview of fundamental machine learning algorithms like regression, clustering, and neural networks. Explore how these algorithms solve real-world problems. Perfect for beginners to grasp core concepts.",
+      "Arrow functions, introduced in ES6 (ECMAScript 2015), provide a concise syntax for writing functions in JavaScript. They are not only syntactically shorter but also behave differently than traditional functions in terms of this binding.",
     slug: "Article_02",
   },
   {
     id: "ARTICLE_03",
-    date: "September 17, 1995",
-    articleHeading: "The Future of Quantum Computing in Everyday Technology",
+    date: "December 22, 2024",
+    articleHeading: "Understanding the javascript map() function",
     article:
       "Quantum computing promises exponential processing power. Discover its potential in cryptography, AI, and simulations. Understand how it could revolutionize industries in the near future.",
     slug: "Article_03",
@@ -83,10 +83,6 @@ const LandingPage = () => {
 
         <div className="social-media-icons-container flex space-x-5">
           <MediaIcon
-            class="fa-brands fa-github"
-            link="https://github.com/KumarWayadande"
-          />
-          <MediaIcon
             class="fa-brands fa-linkedin"
             link="https://www.linkedin.com/in/kumar-wayadande/"
           />
@@ -102,6 +98,13 @@ const LandingPage = () => {
           <MediaIcon
             class="fa-brands fa-facebook"
             link="https://facebook.com/kumar.wayadande"
+          />
+          <MediaIcon
+            class="fa-brands fa-github"
+            // link="https://github.com/KumarWayadande"
+            onClick={() => {
+              alert("Please try after 2 days.");
+            }}
           />
         </div>
       </div>
