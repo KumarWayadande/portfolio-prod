@@ -1,8 +1,11 @@
-# React + Vite
+# kumarwayadande.tech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+Kumar's personal website running on Vercel, Strapi, React, and Node.js.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Note**: The source for this site was not created to be a template or theme, but for my own use. Feel free to take whatever inspiration from it that you want, but this code was not written with the intention of being cloned and deployed. As such, I do not provide support or guidance for doing that. I recommend using the [Gatsby Advanced Starter](https://github.com/vagr9k/gatsby-advanced-starter/) to set up a blog or an existing theme created for that purpose.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
