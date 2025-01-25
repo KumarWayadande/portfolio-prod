@@ -72,11 +72,11 @@ const AboutContainer = () => {
           <div className="first-section-part1-right flex flex-col">
             <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
 
-            <img
+            {/* <img
               className="h-auto max-w-lg transition-all duration-300 rounded-tl-full cursor-pointer filter md:grayscale md:hover:grayscale-0"
               src={logo}
               alt="image description"
-            />
+            /> */}
             <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
           </div>
         </div>
