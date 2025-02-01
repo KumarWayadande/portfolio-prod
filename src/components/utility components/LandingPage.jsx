@@ -12,6 +12,7 @@ import landingWeb2 from "../../assets/l-page4.png";
 import linkcode from "../../assets/linkcode.jpg";
 import innovatus from "../../assets/innovatus.png";
 import campus from "../../assets/campus-infotech.png";
+import { FlipWordsDemo } from "../aceternity-components/flip-words-demo";
 
 const companyImages = [linkcode, innovatus, campus];
 const images = [
@@ -62,10 +63,8 @@ const LandingPage = () => {
         </div>
 
         <div className="heading text-4xl md:text-5xl font-bold dark:text-white">
-          Full-Stack Developer and Cloud Computing Ethusiast.
-          {/* <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-          {" "}cloud computing esthusiast.
-          </span> */}
+          {/* Full-Stack Developer and Cloud Computing Ethusiast. */}
+          <FlipWordsDemo />
         </div>
 
         <div className="">
