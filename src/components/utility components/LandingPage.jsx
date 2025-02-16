@@ -64,12 +64,10 @@ const LandingPage = () => {
 
         <div className="heading text-4xl md:text-5xl font-bold dark:text-white">
           {/* Full-Stack Developer and Cloud Computing Ethusiast. */}
-          <FlipWordsDemo
-            words={["Full-Stack Developer and Cloud Computing Enthusiast"]}
-          />
+          <FlipWordsDemo />
         </div>
 
-        <div className="-translate-y-20">
+        <div className="-translate-y-10">
           <p className="dark:text-gray-400">
             I’m Kumar, a web developer and cloud computing enthusiast based in
             Pune City. I’m intrigued to learn AWS cloud services with
