@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 // "use client";
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../../../lib/utils.js";
 
 export const FlipWords = ({
   words,
   duration = 3000,
-  className
+  // className
 }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -34,7 +34,7 @@ export const FlipWords = ({
       <motion.div
         initial={{
           opacity: 0,
-          y: 10,
+          y: 40,
         }}
         animate={{
           opacity: 1,
@@ -50,7 +50,7 @@ export const FlipWords = ({
           y: -40,
           x: 40,
           filter: "blur(8px)",
-          scale: 2,
+          scale: 4,
           position: "absolute",
         }}
         className={cn(

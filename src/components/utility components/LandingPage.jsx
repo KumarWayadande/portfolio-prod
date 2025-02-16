@@ -67,7 +67,7 @@ const LandingPage = () => {
           <FlipWordsDemo />
         </div>
 
-        <div className="">
+        <div className="-translate-y-10">
           <p className="dark:text-gray-500">
             I’m Kumar, a web developer and cloud computing ethusiast based in
             Pune City. I’m intrigued to learn AWS cloud services with
@@ -80,7 +80,7 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <div className="social-media-icons-container flex space-x-5">
+        <div className="social-media-icons-container -translate-y-10 flex space-x-5">
           <MediaIcon
             class="fa-brands fa-linkedin"
             link="https://www.linkedin.com/in/kumar-wayadande/"
@@ -95,15 +95,8 @@ const LandingPage = () => {
           />
           {/* <MediaIcon class="fa-brands fa-x-twitter" link="#" /> */}
           <MediaIcon
-            class="fa-brands fa-facebook"
-            link="https://facebook.com/kumar.wayadande"
-          />
-          <MediaIcon
             class="fa-brands fa-github"
-            // link="https://github.com/KumarWayadande"
-            onClick={() => {
-              alert("Please try after 2 days.");
-            }}
+            link="https://github.com/KumarWayadande"
           />
         </div>
       </div>
