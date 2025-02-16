@@ -69,15 +69,9 @@ const LandingPage = () => {
           />
         </div>
 
-        <div className="-translate-y-10">
-          {/* <div className=""> */}
+        <div className="-translate-y-20">
           <p className="dark:text-gray-400">
-            {/* <FlipWordsDemo
-              words={[
-                "I’m Kumar, a web developer and cloud computing ethusiast based in Pune City. I’m intrigued to learn AWS cloud services with corresponding certifications and develop better Solutions. I love wandering and exploring historic elements of mumbai.",
-              ]}
-            /> */}
-            I’m Kumar, a web developer and cloud computing ethusiast based in
+            I’m Kumar, a web developer and cloud computing enthusiast based in
             Pune City. I’m intrigued to learn AWS cloud services with
             corresponding certifications and develop better Solutions. I love
             wandering and exploring historic elements of mumbai.

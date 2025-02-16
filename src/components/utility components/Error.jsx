@@ -2,11 +2,6 @@ import { Link } from "react-router-dom";
 import RootLayout from "../pages/RootLayout";
 
 const Error = () => {
-  const content = {
-    errorCode: "404",
-    message: "Some errors occured | Try again later...",
-  };
-
   return (
     <div>
       <RootLayout>
