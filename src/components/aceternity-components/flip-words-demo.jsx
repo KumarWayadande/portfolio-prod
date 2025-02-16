@@ -1,12 +1,13 @@
+/* eslint-disable react/prop-types */
 import { FlipWords } from "../ui/flip-words";
 
-export function FlipWordsDemo() {
-  const words = [
-    "Full-Stack Developer and Cloud Computing Ethusiast.",
-    // "I'm Mumbai's Underbelly Wanderer",
-    // "I'm Team Project Leader",
-    // "I'm School Topper - SSC",
-  ];
+export function FlipWordsDemo({words}) {
+  // const words = [
+  //   "Full-Stack Developer and Cloud Computing Ethusiast.",
+  //   // "I'm Mumbai's Underbelly Wanderer",
+  //   // "I'm Team Project Leader",
+  //   // "I'm School Topper - SSC",
+  // ];
 
   return (
     <div className="">

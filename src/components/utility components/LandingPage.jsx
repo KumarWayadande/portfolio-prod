@@ -64,11 +64,19 @@ const LandingPage = () => {
 
         <div className="heading text-4xl md:text-5xl font-bold dark:text-white">
           {/* Full-Stack Developer and Cloud Computing Ethusiast. */}
-          <FlipWordsDemo />
+          <FlipWordsDemo
+            words={["Full-Stack Developer and Cloud Computing Enthusiast"]}
+          />
         </div>
 
         <div className="-translate-y-10">
-          <p className="dark:text-gray-500">
+          {/* <div className=""> */}
+          <p className="dark:text-gray-400">
+            {/* <FlipWordsDemo
+              words={[
+                "I’m Kumar, a web developer and cloud computing ethusiast based in Pune City. I’m intrigued to learn AWS cloud services with corresponding certifications and develop better Solutions. I love wandering and exploring historic elements of mumbai.",
+              ]}
+            /> */}
             I’m Kumar, a web developer and cloud computing ethusiast based in
             Pune City. I’m intrigued to learn AWS cloud services with
             corresponding certifications and develop better Solutions. I love
