@@ -5,7 +5,7 @@ const Error = () => {
   return (
     <div>
       <RootLayout>
-        <div className="flex flex-col justify-center items-center mx-auto w-max gap-y-4 py-32">
+        <div className="flex h-[calc(100vh-200px)]  flex-col justify-center items-center mx-auto w-max gap-y-4 py-32">
           <h1 className="text-gray-400 dark:text-gray-500 font-bold text-sm">404</h1>
           <h1 className="text-4xl md:text-5xl font-bold dark:text-gray-300">Page not found</h1>
           <p className="text-gray-500 font-normal dark:text-gray-500">Sorry, we couldn’t find the page you’re looking for.</p>
