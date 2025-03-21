@@ -34,11 +34,11 @@ const AboutContainer = () => {
         <div className="first-section-part1 flex flex-col lg:flex-row items-center">
           <div className="first-section-part1-left pr-6">
             <SubHeading>
-              Hey, I&apos;m Kumar! I have been pursuing B.E in Computer
+              Hey, I&apos;m Kumar! A 19 years old boy who have been pursuing B.E in Computer
               Engineering from D.Y Patil Institue of Technology, and I&apos;ve
               been making websites since 2021. I also have a cricket kit,
               kashmir willow bat and no friends to play with🙃. I like working
-              out, reading and waiting for post dinner walk.
+              out, reading, writing and waiting for post dinner walk.
             </SubHeading>
 
             <SubHeading>
