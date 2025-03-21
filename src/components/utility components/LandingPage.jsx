@@ -1,4 +1,4 @@
-import resume from "../../assets/KUMAR WAYADANDE RESUME_I.pdf";
+import resume from "../../assets/KUMAR WAYADANDE RESUME_III.pdf";
 import MediaIcon from "./Mediacon";
 import OverviewArticle from "./OverviewArticle";
 import profilePhoto from "../../assets/profile_5.png";
@@ -290,7 +290,7 @@ const LandingPage = () => {
             <div className="">
               <a href={resume} download="Copy of Resume.pdf">
                 <button className="text-sm dark:hover:bg-[#1f1f23] hover:bg-gray-200 dark:bg-[#202022] dark:border-none dark:text-stone-300 px-4 py-2 w-[100%] rounded-lg bg-gray-100 font-semibold">
-                  Download CV
+                  Download Resume
                 </button>
               </a>
             </div>
